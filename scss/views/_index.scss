@@ -1,0 +1,72 @@
+.portada {
+	width: 100%;
+	height: calc(100vh - 50px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		max-width: 400px;
+		padding: 20px;
+	}
+}
+.que-es {
+	padding: 20px 40px;
+	h1 {
+		margin: 10px 0;
+	}
+	p {
+		margin: 10px 0;
+	}
+}
+.presentacion {
+	width: 100%;
+	margin: 30px 0;
+	padding: 0 40px;
+	display: flex;
+	justify-content: space-evenly;
+	video {
+		max-width: 400px;
+		border-radius: 30px 3px;
+	}
+	div {
+		max-width: 400px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		button {
+			font-size: 22px;
+			font-weight: 600;
+			background-color: $color-blanco;
+			padding: 15px 50px;
+			border-radius: 3px;
+		}
+	}
+}
+.quienes-somos {
+	width: 100%;
+	background-color: $color-gris;
+	// color: $color-blanco;
+	padding: 40px;
+	h2 {
+		margin: 20px 0;
+	}
+	.contenedor {
+		display: flex;
+		justify-content: space-evenly;
+		.card {
+			padding: 20px;
+			background-color: $color-blanco;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			img {
+				width: 200px;
+			}
+			h4 {
+				margin: 25px 0 5px;
+			}
+		}
+	}
+}
