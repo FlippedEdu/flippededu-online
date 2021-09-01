@@ -1,19 +1,18 @@
 body{
   color: $color-blanco;
+  background: $gradiente;
 }
 
 /*Estilos para la seccion CONTACTO*/
 h3{
   width: 100vw;
   margin-bottom: 4rem;
-  font-size: 2rem;
-
+  font-size: 2.5rem;
 }
 
 .sectionContacto{
   width: 100vw;
   padding: 2rem;
-  background: $gradiente;
   display: flex;
   flex-flow: row wrap;
 
@@ -47,4 +46,22 @@ h3{
   border-bottom-right-radius: 50px;
   text-align: center;
   resize: none;
+}
+
+/*Estilos para la sección de Preguntas Frecuentes*/
+
+.preguntasFrecuentes{
+  padding: 2rem;
+}
+
+.colapsar{
+  background-color: transparent;
+  color: $color-blanco;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  font-size: 2rem;
 }
