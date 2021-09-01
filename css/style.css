@@ -11,6 +11,26 @@
   font-family: 'Lato', sans-serif, -apple-system, 'Open Sans';
   box-sizing: border-box; }
 
+.footer {
+  height: 15rem;
+  background: #797ff2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+  .footer__texto {
+    font-size: 2rem;
+    font-weight: bold; }
+  .footer__img {
+    width: 100px;
+    height: 100px;
+    background-image: url(/imagenes/ico-inst2.png);
+    background-size: cover;
+    transition: 0.3s; }
+
+.footer__img:hover {
+  background-image: url(/imagenes/ico-inst1.png); }
+
 body {
   color: #f2f2f2;
   background: linear-gradient(120deg, #1fb4e6, #3d46f2, #041c64); }
@@ -23,7 +43,6 @@ h3 {
 
 .sectionContacto {
   width: 100vw;
-  padding: 2rem;
   display: flex;
   flex-flow: row wrap; }
   .sectionContacto__form {
@@ -53,14 +72,10 @@ h3 {
   resize: none; }
 
 /*Estilos para la sección de Preguntas Frecuentes*/
-.preguntasFrecuentes {
-  padding: 2rem; }
-
 .colapsar {
   background-color: transparent;
   color: #f2f2f2;
   cursor: pointer;
-  padding: 18px;
   width: 100%;
   border: none;
   outline: none;

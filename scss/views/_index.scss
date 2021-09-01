@@ -12,7 +12,7 @@ h3{
 
 .sectionContacto{
   width: 100vw;
-  padding: 2rem;
+  // padding: 2rem;
   display: flex;
   flex-flow: row wrap;
 
@@ -51,14 +51,14 @@ h3{
 /*Estilos para la sección de Preguntas Frecuentes*/
 
 .preguntasFrecuentes{
-  padding: 2rem;
+  // padding: 2rem;
 }
 
 .colapsar{
   background-color: transparent;
   color: $color-blanco;
   cursor: pointer;
-  padding: 18px;
+  // padding: 18px;
   width: 100%;
   border: none;
   outline: none;
