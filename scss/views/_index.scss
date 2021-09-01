@@ -1,0 +1,50 @@
+body{
+  color: $color-blanco;
+}
+
+/*Estilos para la seccion CONTACTO*/
+h3{
+  width: 100vw;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+
+}
+
+.sectionContacto{
+  width: 100vw;
+  padding: 2rem;
+  background: $gradiente;
+  display: flex;
+  flex-flow: row wrap;
+
+  &__form{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+    &--datos{
+      width: 40%;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-between;
+    }
+  }
+}
+
+.completarEspacios{
+  height: 18%;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+#textareaConsulta{
+  width: 40%;
+  font-size: 1.5rem;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  text-align: center;
+  resize: none;
+}
