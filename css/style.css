@@ -12,7 +12,8 @@
   box-sizing: border-box; }
 
 .footer {
-  height: 15rem;
+  height: 12rem;
+  padding: 1rem 20rem;
   background: #797ff2;
   display: flex;
   flex-direction: row;
@@ -37,12 +38,11 @@ body {
 
 /*Estilos para la seccion CONTACTO*/
 h3 {
-  width: 100vw;
   margin-bottom: 4rem;
   font-size: 2.5rem; }
 
 .sectionContacto {
-  width: 100vw;
+  padding: 3rem 10rem 3rem;
   display: flex;
   flex-flow: row wrap; }
   .sectionContacto__form {
@@ -72,10 +72,14 @@ h3 {
   resize: none; }
 
 /*Estilos para la sección de Preguntas Frecuentes*/
+.preguntasFrecuentes {
+  padding: 3rem 10rem 3rem; }
+
 .colapsar {
   background-color: transparent;
   color: #f2f2f2;
   cursor: pointer;
+  padding: 18px;
   width: 100%;
   border: none;
   outline: none;
