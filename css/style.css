@@ -11,22 +11,24 @@
   box-sizing: border-box;
 }
 
-nav {
+.nav {
   width: 100%;
   height: 50px;
   box-shadow: 0 0 10px 0 rgba(110, 110, 110, 0.4);
+  background-color: #dbd5d5;
 }
-nav ul {
+.nav .nav__ul {
   height: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
 }
-nav ul li a {
+.nav .nav__ul .nav__li .nav__enlace {
   text-decoration: none;
-  color: #000000;
+  color: #041c64;
   padding: 10px 20px;
+  font-weight: 600;
 }
 
 .portada {
@@ -35,72 +37,86 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #000244;
 }
-.portada img {
+.portada .portada__img {
   max-width: 400px;
   padding: 20px;
 }
 
 .que-es {
-  padding: 20px 40px;
+  background-color: #000244;
+  color: #f2f2f2;
+  padding: 20px 60px;
 }
-.que-es h1 {
+.que-es .que-es__h1 {
   margin: 10px 0;
 }
-.que-es p {
-  margin: 10px 0;
+.que-es .que-es__descripcion {
+  margin: 15px 0;
 }
 
 .presentacion {
   width: 100%;
-  margin: 30px 0;
-  padding: 0 40px;
+  padding: 60px 40px;
   display: flex;
   justify-content: space-evenly;
+  background-color: #000244;
 }
-.presentacion video {
+.presentacion .presentacion__video {
   max-width: 400px;
   border-radius: 30px 3px;
 }
-.presentacion div {
+.presentacion .presentacion__contenedor {
   max-width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-.presentacion div button {
+.presentacion .presentacion__contenedor .presentacion__button {
   font-size: 22px;
   font-weight: 600;
-  background-color: #f2f2f2;
-  padding: 15px 50px;
+  color: #041c64;
+  background-color: #797ff2;
+  padding: 10px 40px;
   border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+.presentacion .presentacion__contenedor .presentacion__dudas {
+  color: #f2f2f2;
 }
 
 .quienes-somos {
   width: 100%;
-  background-color: #dbd5d5;
-  padding: 40px;
+  background: linear-gradient(120deg, #1fb4e6d5, #3d46f2d0, #041c64d3), url(../imagenes/galaxia.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #f2f2f2;
+  padding: 40px 60px;
 }
-.quienes-somos h2 {
+.quienes-somos .quienes-somos__h2 {
   margin: 20px 0;
 }
-.quienes-somos .contenedor {
+.quienes-somos .quienes-somos__contenedor {
   display: flex;
   justify-content: space-evenly;
 }
-.quienes-somos .contenedor .card {
+.quienes-somos .quienes-somos__contenedor .card {
   padding: 20px;
-  background-color: #f2f2f2;
+  background-color: rgba(12, 12, 12, 0.575);
+  border-radius: 3px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.quienes-somos .contenedor .card img {
+.quienes-somos .quienes-somos__contenedor .card .card__img {
   width: 200px;
+  border-radius: 100px;
 }
-.quienes-somos .contenedor .card h4 {
+.quienes-somos .quienes-somos__contenedor .card .card__nombre {
   margin: 25px 0 5px;
 }
 

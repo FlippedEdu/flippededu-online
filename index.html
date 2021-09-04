@@ -15,27 +15,27 @@
 	</head>
 	<body>
 		<nav class="nav">
-			<ul>
-				<li><a href="">¿Qué es?</a></li>
-				<li><a href="">¿Quiénes somos?</a></li>
-				<li><a href="">Cursos</a></li>
-				<li><a href="">Contacto</a></li>
-				<li><a href="">Preguntas frecuentes</a></li>
+			<ul class="nav__ul">
+				<li class="nav__li"><a class="nav__enlace" href="">¿Qué es?</a></li>
+				<li class="nav__li"><a class="nav__enlace" href="">¿Quiénes somos?</a></li>
+				<li class="nav__li"><a class="nav__enlace" href="">Cursos</a></li>
+				<li class="nav__li"><a class="nav__enlace" href="">Contacto</a></li>
+				<li class="nav__li"><a class="nav__enlace" href="">Preguntas frecuentes</a></li>
 			</ul>
 		</nav>
 		<section class="portada">
-			<img src="imagenes/nombre.svg" alt="Flipped" />
+			<img src="imagenes/nombre.svg" alt="Flipped" class="portada__img" />
 		</section>
 		<section class="que-es">
-			<h1>¿Qué es Flipped?</h1>
-			<p>
+			<h1 class="que-es__h1">¿Qué es Flipped?</h1>
+			<p class="que-es__descripcion">
 				La idea de Flipped surge al momento de darnos cuenta de la brecha digital que existe en los
 				países en vías de desarrollo vs les más avanzados tecnológicamente, y viendo la oportunidad
 				de contar talento joven que se puede formar para trabajar en el sector de tecnologías
 				emergentes dándoles una oportunidad de movilidad social para que puedan vivir de mejor
 				manera.
 			</p>
-			<p>
+			<p class="que-es__descripcion">
 				Es por ello que adaptándonos el contexto de los países con dificultades en la conectividad
 				la meta es brindar el formato de flipped classroom que es un aula hibrida, asíncrona con los
 				contenidos teóricos y síncrona en los espacios de mentoring, para darle la posibilidad a los
@@ -44,32 +44,34 @@
 			</p>
 		</section>
 		<section class="presentacion">
-			<video src="video/flipped.mp4"></video>
-			<div>
-				<button>Inscribite acá</button>
-				<p>¿Tenes dudas? Escribinos al 23456789</p>
+			<video src="video/flipped.mp4" class="presentacion__video" controls></video>
+			<div class="presentacion__contenedor">
+				<button class="presentacion__button">Inscribite acá</button>
+				<p class="presentacion__dudas">¿Tenes dudas? Escribinos al 23456789</p>
 			</div>
 		</section>
 		<section class="quienes-somos">
-			<h2>¿Quiénes somos?</h2>
-			<div class="contenedor">
+			<h2 class="quienes-somos__h2">¿Quiénes somos?</h2>
+			<div class="quienes-somos__contenedor">
 				<div class="card">
 					<img
 						src="imagenes/Recurso 11Nosotrxs.jpg"
 						alt="Foto de Andres Reinoza CEO & Founder de Flipped"
+						class="card__img"
 					/>
-					<h4>Andres Reinoza Arteaga</h4>
-					<p>CEO & Founder</p>
-					<p>Estudiante de Economia</p>
+					<h4 class="card__nombre">Andres Reinoza Arteaga</h4>
+					<p class="card__info">CEO & Founder</p>
+					<p class="card__info">Estudiante de Economia</p>
 				</div>
 				<div class="card">
 					<img
 						src="imagenes/Recurso 10Nosotrxs.jpg"
 						alt="Foto de Valentina Reyes CMO & Co-Founder de Flipped"
+						class="card__img"
 					/>
-					<h4>Valentina Reyes Leon</h4>
-					<p>CMO & Co-Founder</p>
-					<p>Estudiante de Diseño Gráfico</p>
+					<h4 class="card__nombre">Valentina Reyes Leon</h4>
+					<p class="card__info">CMO & Co-Founder</p>
+					<p class="card__info">Estudiante de Diseño Gráfico</p>
 				</div>
 			</div>
 		</section>
