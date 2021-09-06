@@ -17,17 +17,17 @@
 	<body>
 		<nav class="nav">
 			<ul class="nav__ul">
-				<li class="nav__li"><a class="nav__enlace" href="">¿Qué es?</a></li>
-				<li class="nav__li"><a class="nav__enlace" href="">¿Quiénes somos?</a></li>
-				<li class="nav__li"><a class="nav__enlace" href="">Cursos</a></li>
-				<li class="nav__li"><a class="nav__enlace" href="">Contacto</a></li>
-				<li class="nav__li"><a class="nav__enlace" href="">Preguntas frecuentes</a></li>
+				<li class="nav__li"><a class="nav__enlace" href="#que-es">¿Qué es?</a></li>
+				<li class="nav__li"><a class="nav__enlace" href="#quienes-somos">¿Quiénes somos?</a></li>
+				<li class="nav__li"><a class="nav__enlace" href="#cursos">Cursos</a></li>
+				<li class="nav__li"><a class="nav__enlace" href="#contacto">Contacto</a></li>
+				<li class="nav__li"><a class="nav__enlace" href="#preguntas">Preguntas frecuentes</a></li>
 			</ul>
 		</nav>
 		<section class="portada">
 			<img src="imagenes/nombre.svg" alt="Flipped" class="portada__img" />
 		</section>
-		<section class="que-es">
+		<section class="que-es" id="que-es">
 			<h1 class="que-es__h1">¿Qué es Flipped?</h1>
 			<p class="que-es__descripcion">
 				La idea de Flipped surge al momento de darnos cuenta de la brecha digital que existe en los
@@ -51,7 +51,7 @@
 				<p class="presentacion__dudas">¿Tenes dudas? Escribinos al 23456789</p>
 			</div>
 		</section>
-		<section class="quienes-somos">
+		<section class="quienes-somos" id="quienes-somos">
 			<h2 class="quienes-somos__h2">¿Quiénes somos?</h2>
 			<div class="quienes-somos__contenedor">
 				<div class="card">
@@ -75,6 +75,34 @@
 					<p class="card__info">Estudiante de Diseño Gráfico</p>
 				</div>
 			</div>
+		</section>
+		<section class="cursos" id="cursos">
+			<h2 class="cursos__h2">CURSOS</h2>
+			<div class="cursos__container">
+				<ul id="autoWidth" class="cs-hidden cursos__lista">
+					<li class="cursos__item">
+						<h3 class="cursos__nombre">CURSO 1</h3>
+						<p class="cursos__detalle">Módulo 1 + Módulo 2</p>
+					</li>
+					<li class="cursos__item">
+						<h3 class="cursos__nombre">CURSO 2</h3>
+						<p class="cursos__detalle">Módulo 1 + Módulo 2</p>
+					</li>
+					<li class="cursos__item">
+						<h3 class="cursos__nombre">CURSO 3</h3>
+						<p class="cursos__detalle">Módulo 1 + Módulo 2</p>
+					</li>
+					<li class="cursos__item">
+						<h3 class="cursos__nombre">CURSO 4</h3>
+						<p class="cursos__detalle">Módulo 1 + Módulo 2</p>
+					</li>
+					<li class="cursos__item">
+						<h3 class="cursos__nombre">CURSO 5</h3>
+						<p class="cursos__detalle">Módulo 1 + Módulo 2</p>
+					</li>
+				</ul>
+			</div>
+			<button class="cursos__button">INSCRIPCIONES</button>
 		</section>
 		<script src="js/jquery-v3.6.0.js"></script>
 		<script src="js/lightslider.js"></script>
