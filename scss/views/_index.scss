@@ -1,16 +1,16 @@
 body{
   color: $color-blanco;
-  background: $gradiente;
+  background: $color-azul-muy-oscuro;
 }
 
 /*Estilos para la seccion CONTACTO*/
-h3{
+.contacto__h2{
   margin-bottom: 4rem;
   font-size: 2.5rem;
 }
 
 .sectionContacto{
-  padding: 3rem 10rem 3rem;
+  padding: 3rem 60px 3rem;
   display: flex;
   flex-flow: row wrap;
 
@@ -22,7 +22,7 @@ h3{
     justify-content: space-evenly;
 
     &--datos{
-      width: 40%;
+      min-width:40%;
       display: flex;
       flex-flow: column wrap;
       justify-content: space-between;
@@ -38,18 +38,24 @@ h3{
 }
 
 #textareaConsulta{
-  width: 40%;
+  min-width: 50%;
   font-size: 1.5rem;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
+  flex-shrink: 2;
   text-align: center;
   resize: none;
 }
 
 /*Estilos para la sección de Preguntas Frecuentes*/
 
+.preguntasFrecuentes__h2{
+  @extend .contacto__h2;
+}
+
 .preguntasFrecuentes{
-  padding: 3rem 10rem 3rem;
+  background: $color-azul-oscuro;
+  padding: 3rem 60px 3rem;
 }
 
 .colapsar{
@@ -62,4 +68,21 @@ h3{
   outline: none;
   text-align: left;
   font-size: 2rem;
+}
+
+
+@media (max-width: 1024px) { 
+  .sectionContacto__form{
+    height: 40rem;
+    &--datos{
+      min-width:75%;
+    }
+  }
+  
+  
+
+  #textareaConsulta{
+    margin-top: 1.75rem;
+    min-width: 75%;
+  }
 }
