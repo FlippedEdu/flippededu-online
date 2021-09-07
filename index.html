@@ -16,10 +16,18 @@
 	</head>
 	<body class="hidden">
 		<section class="preloader" id="preloader">
-			<img src="imagenes/f-capital.svg" alt="Logo de flipped" class="preloader__logo" />
+			<div class="preloader__container">
+				<img src="imagenes/f-capital.svg" alt="Logo de flipped" class="preloader__logo" />
+				<div class="loadingio-spinner-eclipse-g89yp28h9bn preloader__spinner">
+					<div class="ldio-6z36en8lrh5">
+						<div></div>
+					</div>
+				</div>
+			</div>
 		</section>
 		<nav class="nav">
-			<ul class="nav__ul">
+			<ul class="nav__ul" id="nav__ul">
+				<li class="d-none active"><a href="#portada"></a></li>
 				<li class="nav__li"><a class="nav__enlace" href="#que-es">¿Qué es?</a></li>
 				<li class="nav__li"><a class="nav__enlace" href="#quienes-somos">¿Quiénes somos?</a></li>
 				<li class="nav__li"><a class="nav__enlace" href="#cursos">Cursos</a></li>
@@ -27,7 +35,7 @@
 				<li class="nav__li"><a class="nav__enlace" href="#preguntas">Preguntas frecuentes</a></li>
 			</ul>
 		</nav>
-		<section class="portada">
+		<section class="portada" id="portada">
 			<img src="imagenes/nombre.svg" alt="Flipped" class="portada__img" />
 		</section>
 		<section class="que-es" id="que-es">
@@ -110,6 +118,8 @@
 		<script src="js/jquery-v3.6.0.js"></script>
 		<script src="js/preloader.js"></script>
 		<script src="js/lightslider.js"></script>
+		<script src="js/nav-active.js"></script>
+		<script src="js/main.js"></script>
 		<script src="js/slide.js"></script>
 	</body>
 </html>
