@@ -33,11 +33,12 @@
 .footer__img:hover {
   background-image: url(/imagenes/ico-inst1.png); }
 
+/*Estilo del body*/
 body {
   color: #f2f2f2;
   background: #000244; }
 
-/*Estilos para la seccion CONTACTO*/
+/*Estilos para la sección CONTACTO*/
 .contacto__h2, .preguntasFrecuentes__h2 {
   margin-bottom: 4rem;
   font-size: 2.5rem; }
@@ -100,6 +101,7 @@ body {
   overflow: hidden;
   background-color: #041c64; }
 
+/*Responsive*/
 @media (max-width: 1024px) {
   .sectionContacto__form {
     height: 40rem; }

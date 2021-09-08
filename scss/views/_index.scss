@@ -1,9 +1,10 @@
+/*Estilo del body*/
 body{
   color: $color-blanco;
   background: $color-azul-muy-oscuro;
 }
 
-/*Estilos para la seccion CONTACTO*/
+/*Estilos para la sección CONTACTO*/
 .contacto__h2{
   margin-bottom: 4rem;
   font-size: 2.5rem;
@@ -83,6 +84,7 @@ body{
   background-color: $color-azul-oscuro;
 }
 
+/*Responsive*/
 @media (max-width: 1024px) { 
   .sectionContacto__form{
     height: 40rem;
@@ -90,9 +92,6 @@ body{
       min-width:75%;
     }
   }
-  
-  
-
   #textareaConsulta{
     margin-top: 1.75rem;
     min-width: 75%;

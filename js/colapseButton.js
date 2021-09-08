@@ -1,4 +1,4 @@
-
+/* Funcionalidad para los botones que despliegan información en FAQ */
 var coll = document.getElementsByClassName("colapsar");
 var i;
 
