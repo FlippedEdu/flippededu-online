@@ -70,6 +70,18 @@ body{
   font-size: 2rem;
 }
 
+.active, .colapsar:hover {
+  background-color: $color-violeta;
+}
+
+.content {
+  padding: 0 18px;
+  margin: 20px;
+  font-size: 1.75rem;
+  display: none;
+  overflow: hidden;
+  background-color: $color-azul-oscuro;
+}
 
 @media (max-width: 1024px) { 
   .sectionContacto__form{

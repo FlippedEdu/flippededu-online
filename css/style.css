@@ -89,6 +89,17 @@ body {
   text-align: left;
   font-size: 2rem; }
 
+.active, .colapsar:hover {
+  background-color: #797ff2; }
+
+.content {
+  padding: 0 18px;
+  margin: 20px;
+  font-size: 1.75rem;
+  display: none;
+  overflow: hidden;
+  background-color: #041c64; }
+
 @media (max-width: 1024px) {
   .sectionContacto__form {
     height: 40rem; }
