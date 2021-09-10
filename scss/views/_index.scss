@@ -41,9 +41,19 @@ body{
   border: 1px solid;
 }
 
+.contenedor__textArea{
+  min-width: 50%;
+  background: $gradiente-transparente, url(/imagenes/galaxia.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #textareaConsulta{
-  min-width: 40%;
-  height: 80%;
+  min-width: 90%;
+  height: 90%;
   font-size: 1.5rem;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
