@@ -13,25 +13,26 @@
 
 .footer {
   height: 10rem;
+  max-width: 100%;
   padding: 10px 60px;
   background: #dbd5d5;
   color: #041c64;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center; }
+  justify-content: center; }
+  .footer .container__redes {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
   .footer__texto {
     font-size: 2rem;
     font-weight: bold; }
   .footer__img {
-    width: 100px;
-    height: 100px;
-    background-image: url(/imagenes/ico-inst2.png);
+    width: 75px;
+    height: 75px;
     background-size: cover;
     transition: 0.3s; }
-
-.footer__img:hover {
-  background-image: url(/imagenes/ico-inst1.png); }
 
 /*Estilo del body*/
 body {
@@ -45,16 +46,19 @@ body {
 
 .sectionContacto {
   padding: 3rem 60px 3rem;
+  height: 60rem;
   display: flex;
   flex-flow: row wrap; }
   .sectionContacto__form {
     width: 100%;
-    height: 30rem;
+    height: 40rem;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    align-content: space-around; }
     .sectionContacto__form--datos {
       min-width: 40%;
+      height: 80%;
       display: flex;
       flex-flow: column wrap;
       justify-content: space-between; }
@@ -66,7 +70,8 @@ body {
   border: 1px solid; }
 
 #textareaConsulta {
-  min-width: 50%;
+  min-width: 40%;
+  height: 80%;
   font-size: 1.5rem;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -74,9 +79,23 @@ body {
   text-align: center;
   resize: none; }
 
+.form__container--button {
+  min-width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.form__button {
+  width: 25%;
+  height: 50px;
+  font-size: 1.3rem;
+  background-color: #797ff2;
+  color: #f2f2f2;
+  border: none;
+  border-radius: 5px; }
+
 /*Estilos para la sección de Preguntas Frecuentes*/
 .preguntasFrecuentes {
-  background: #041c64;
+  background: #000244;
   padding: 3rem 60px 3rem; }
 
 .colapsar {
@@ -103,10 +122,12 @@ body {
 
 /*Responsive*/
 @media (max-width: 1024px) {
-  .sectionContacto__form {
-    height: 40rem; }
-    .sectionContacto__form--datos {
-      min-width: 75%; }
+  .sectionContacto {
+    height: 90rem; }
+    .sectionContacto__form {
+      height: 40rem; }
+      .sectionContacto__form--datos {
+        min-width: 80%; }
   #textareaConsulta {
     margin-top: 1.75rem;
-    min-width: 75%; } }
+    min-width: 80%; } }
