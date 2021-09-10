@@ -18,7 +18,7 @@ body{
 
   &__form{
     width: 100%;
-    height: 40rem;
+    height: 75%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -120,17 +120,24 @@ body{
 @media (max-width: 1024px) { 
 
   .sectionContacto{
-    height: 90rem;
+    height: 80rem;   
+    
     &__form{
-      height: 40rem;
-      
+      height: 80%;
       &--datos{
-        min-width:80%;
+        height: 50%;
+        width:80%;
       }
     }
-  }
+      
+    }
   #textareaConsulta{
     margin-top: 1.75rem;
-    min-width: 80%;
+    width: 80%;
+  }
+  
+  .contenedor__textArea{
+    height: 55%;
+    width: 80% ;
   }
 }

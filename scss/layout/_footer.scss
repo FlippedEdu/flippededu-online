@@ -6,16 +6,7 @@
   color:$color-azul-oscuro;
   display: flex;
   justify-content: center;
-
-  .container__redes
-  {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
+  
   &__texto{
     font-size: 2rem;
     font-weight: bold;
@@ -24,7 +15,15 @@
   &__img{
     width: 75px;
     height: 75px;
-    background-size: cover;
-    transition: 0.3s;
+    filter: invert(10%) sepia(39%) saturate(4507%) hue-rotate(219deg) brightness(104%) contrast(110%);  
   }
 }
+
+.container__redes
+  {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
