@@ -3,15 +3,21 @@
 	height: calc(100vh - 50px);
 	margin-top: 50px;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-color: $color-azul-muy-oscuro;
 	.portada__img {
-		max-width: 400px;
+		max-width: 600px;
 		padding: 20px;
 		@media (max-width: 768px) {
 			max-width: 300px;
 		}
+	}
+	.portada__h1 {
+		color: $color-blanco;
+		margin-top: 20px;
+		font-size: 30px;
 	}
 }
 .que-es {
@@ -26,6 +32,7 @@
 	}
 	.que-es__descripcion {
 		margin: 15px 0;
+		font-size: 18px;
 	}
 }
 .presentacion {
@@ -36,7 +43,7 @@
 	flex-wrap: wrap;
 	background-color: $color-azul-muy-oscuro;
 	.presentacion__video {
-		max-width: 400px;
+		max-width: 500px;
 		border-radius: 30px 3px;
 		margin: 0 20px;
 		@media (max-width: 576px) {

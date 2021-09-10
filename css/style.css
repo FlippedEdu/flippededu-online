@@ -91,7 +91,7 @@ html {
 
 .nav {
   width: 100%;
-  height: 50px;
+  height: 60px;
   position: fixed;
   top: 0;
   left: 0;
@@ -165,18 +165,24 @@ html {
   height: calc(100vh - 50px);
   margin-top: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #000244;
 }
 .portada .portada__img {
-  max-width: 400px;
+  max-width: 600px;
   padding: 20px;
 }
 @media (max-width: 768px) {
   .portada .portada__img {
     max-width: 300px;
   }
+}
+.portada .portada__h1 {
+  color: #f2f2f2;
+  margin-top: 20px;
+  font-size: 30px;
 }
 
 .que-es {
@@ -194,6 +200,7 @@ html {
 }
 .que-es .que-es__descripcion {
   margin: 15px 0;
+  font-size: 18px;
 }
 
 .presentacion {
@@ -205,7 +212,7 @@ html {
   background-color: #000244;
 }
 .presentacion .presentacion__video {
-  max-width: 400px;
+  max-width: 500px;
   border-radius: 30px 3px;
   margin: 0 20px;
 }
