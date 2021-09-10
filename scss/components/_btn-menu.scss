@@ -1,0 +1,12 @@
+.btn-menu {
+	display: none;
+	margin: 0 30px;
+	padding: 3px 10px;
+	cursor: pointer;
+	.btn-menu__hamburguesa {
+		height: 40px;
+	}
+	@media (max-width: 768px) {
+		display: block;
+	}
+}

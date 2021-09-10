@@ -41,5 +41,13 @@
 				background-color: $color-azul-medio;
 			}
 		}
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+	@media (max-width: 768px) {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
 	}
 }

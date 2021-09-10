@@ -9,6 +9,9 @@
 	.portada__img {
 		max-width: 400px;
 		padding: 20px;
+		@media (max-width: 768px) {
+			max-width: 300px;
+		}
 	}
 }
 .que-es {
@@ -17,6 +20,9 @@
 	padding: 50px 60px 20px;
 	.que-es__h1 {
 		margin: 10px 0;
+		@media (max-width: 768px) {
+			text-align: center;
+		}
 	}
 	.que-es__descripcion {
 		margin: 15px 0;
@@ -27,17 +33,24 @@
 	padding: 60px 40px;
 	display: flex;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
 	background-color: $color-azul-muy-oscuro;
 	.presentacion__video {
 		max-width: 400px;
 		border-radius: 30px 3px;
+		margin: 0 20px;
+		@media (max-width: 576px) {
+			max-width: 300px;
+		}
 	}
 	.presentacion__contenedor {
-		max-width: 400px;
+		width: 270px;
+		height: 225px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: center;
+		margin: 0 30px;
 		.presentacion__button {
 			font-size: 22px;
 			font-weight: 600;
@@ -51,6 +64,7 @@
 		}
 		.presentacion__dudas {
 			color: $color-blanco;
+			text-align: center;
 		}
 	}
 }
@@ -63,12 +77,17 @@
 	padding: 40px 60px;
 	.quienes-somos__h2 {
 		margin: 20px 0;
+		@media (max-width: 768px) {
+			text-align: center;
+		}
 	}
 	.quienes-somos__contenedor {
 		display: flex;
 		justify-content: space-evenly;
+		flex-wrap: wrap;
 		.card {
 			padding: 20px;
+			margin: 20px;
 			background-color: rgba(12, 12, 12, 0.575);
 			border-radius: 3px;
 			display: flex;
@@ -92,6 +111,9 @@
 	.cursos__h2 {
 		color: $color-blanco;
 		margin: 40px 0;
+		@media (max-width: 768px) {
+			text-align: center;
+		}
 	}
 	.cursos__container {
 		.cursos__lista {

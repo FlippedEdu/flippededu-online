@@ -132,6 +132,33 @@ html {
   color: #f2f2f2;
   background-color: #3d46f2;
 }
+@media (max-width: 768px) {
+  .nav .nav__ul {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.btn-menu {
+  display: none;
+  margin: 0 30px;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+.btn-menu .btn-menu__hamburguesa {
+  height: 40px;
+}
+@media (max-width: 768px) {
+  .btn-menu {
+    display: block;
+  }
+}
 
 .portada {
   width: 100%;
@@ -146,6 +173,11 @@ html {
   max-width: 400px;
   padding: 20px;
 }
+@media (max-width: 768px) {
+  .portada .portada__img {
+    max-width: 300px;
+  }
+}
 
 .que-es {
   background-color: #000244;
@@ -154,6 +186,11 @@ html {
 }
 .que-es .que-es__h1 {
   margin: 10px 0;
+}
+@media (max-width: 768px) {
+  .que-es .que-es__h1 {
+    text-align: center;
+  }
 }
 .que-es .que-es__descripcion {
   margin: 15px 0;
@@ -164,18 +201,27 @@ html {
   padding: 60px 40px;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   background-color: #000244;
 }
 .presentacion .presentacion__video {
   max-width: 400px;
   border-radius: 30px 3px;
+  margin: 0 20px;
+}
+@media (max-width: 576px) {
+  .presentacion .presentacion__video {
+    max-width: 300px;
+  }
 }
 .presentacion .presentacion__contenedor {
-  max-width: 400px;
+  width: 270px;
+  height: 225px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  margin: 0 30px;
 }
 .presentacion .presentacion__contenedor .presentacion__button {
   font-size: 22px;
@@ -190,6 +236,7 @@ html {
 }
 .presentacion .presentacion__contenedor .presentacion__dudas {
   color: #f2f2f2;
+  text-align: center;
 }
 
 .quienes-somos {
@@ -203,12 +250,19 @@ html {
 .quienes-somos .quienes-somos__h2 {
   margin: 20px 0;
 }
+@media (max-width: 768px) {
+  .quienes-somos .quienes-somos__h2 {
+    text-align: center;
+  }
+}
 .quienes-somos .quienes-somos__contenedor {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .quienes-somos .quienes-somos__contenedor .card {
   padding: 20px;
+  margin: 20px;
   background-color: rgba(12, 12, 12, 0.575);
   border-radius: 3px;
   display: flex;
@@ -232,6 +286,11 @@ html {
 .cursos .cursos__h2 {
   color: #f2f2f2;
   margin: 40px 0;
+}
+@media (max-width: 768px) {
+  .cursos .cursos__h2 {
+    text-align: center;
+  }
 }
 .cursos .cursos__container .cursos__lista .cursos__item {
   width: 300px;
