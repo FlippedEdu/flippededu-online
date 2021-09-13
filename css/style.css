@@ -165,7 +165,7 @@ h2 {
 
 .btn-menu {
   display: none;
-  margin: 0 30px;
+  margin: 0 10px;
   padding: 3px 10px;
   cursor: pointer;
 }
@@ -191,7 +191,7 @@ h2 {
 }
 .portada .portada__img {
   position: relative;
-  max-width: 600px;
+  max-width: 500px;
   padding: 20px;
   z-index: 10;
 }
@@ -204,10 +204,12 @@ h2 {
   opacity: 0;
   position: relative;
   color: #f2f2f2;
+  text-align: center;
   margin-top: 20px;
+  padding: 0 20px;
   font-size: 30px;
   z-index: 10;
-  animation: aparecer 2s ease-in-out 0.5s forwards;
+  animation: aparecer 2s ease-in-out forwards;
 }
 .portada .portada__conteiner {
   width: 100%;
@@ -247,6 +249,7 @@ h2 {
 }
 
 .presentacion {
+  position: relative;
   width: 100%;
   padding: 60px 40px;
   display: flex;
@@ -254,15 +257,33 @@ h2 {
   flex-wrap: wrap;
   background-color: #000244;
 }
-.presentacion .presentacion__video {
+.presentacion .presentacion__flip {
+  width: 200px;
+  position: absolute;
+  top: -55px;
+  right: 0;
+}
+.presentacion .presentacion__cont-video {
+  position: relative;
+}
+.presentacion .presentacion__cont-video .presentacion__video {
+  position: relative;
   max-width: 500px;
   border-radius: 30px 3px;
   margin: 0 20px;
+  z-index: 10;
 }
 @media (max-width: 576px) {
-  .presentacion .presentacion__video {
+  .presentacion .presentacion__cont-video .presentacion__video {
     max-width: 300px;
   }
+}
+.presentacion .presentacion__cont-video .presentacion__luna {
+  position: absolute;
+  width: 100px;
+  bottom: -43px;
+  left: -30px;
+  z-index: 5;
 }
 .presentacion .presentacion__contenedor {
   width: 270px;
@@ -290,8 +311,9 @@ h2 {
 }
 
 .quienes-somos {
+  position: relative;
   width: 100%;
-  background: linear-gradient(120deg, #1fb4e6d5, #3d46f2d0, #041c64d3), url(../imagenes/galaxia.jpg);
+  background: url(../imagenes/galaxia2.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   color: #f2f2f2;
@@ -313,7 +335,6 @@ h2 {
 .quienes-somos .quienes-somos__contenedor .card {
   padding: 20px;
   margin: 20px;
-  background-color: rgba(12, 12, 12, 0.575);
   border-radius: 3px;
   display: flex;
   flex-direction: column;
@@ -321,11 +342,18 @@ h2 {
   align-items: center;
 }
 .quienes-somos .quienes-somos__contenedor .card .card__img {
-  width: 200px;
+  width: 150px;
   border-radius: 100px;
 }
 .quienes-somos .quienes-somos__contenedor .card .card__nombre {
   margin: 25px 0 5px;
+}
+.quienes-somos .quienes-somos__flip {
+  position: absolute;
+  width: 180px;
+  bottom: -80px;
+  left: 40px;
+  transform: scaleX(-1);
 }
 
 .cursos {
