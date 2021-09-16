@@ -95,9 +95,15 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #000244;
+  overflow-x: hidden;
+}
+
 h2 {
   font-family: "Harabara", sans-serif, -apple-system, "Open Sans";
   letter-spacing: 1.5px;
+  font-size: 26px;
 }
 
 .h2__span {
@@ -133,6 +139,7 @@ h2 {
 }
 .nav .nav__ul .nav__li .nav__enlace {
   width: 100%;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,6 +283,7 @@ h2 {
 @media (max-width: 576px) {
   .presentacion .presentacion__cont-video .presentacion__video {
     max-width: 300px;
+    margin: 0 5px;
   }
 }
 .presentacion .presentacion__cont-video .presentacion__luna {
@@ -333,7 +341,6 @@ h2 {
   flex-wrap: wrap;
 }
 .quienes-somos .quienes-somos__contenedor .card {
-  padding: 20px;
   margin: 20px;
   border-radius: 3px;
   display: flex;
@@ -348,12 +355,19 @@ h2 {
 .quienes-somos .quienes-somos__contenedor .card .card__nombre {
   margin: 25px 0 5px;
 }
+.quienes-somos .quienes-somos__contenedor .card .card__info {
+  text-align: center;
+}
 .quienes-somos .quienes-somos__flip {
   position: absolute;
   width: 180px;
   bottom: -80px;
   left: 40px;
-  transform: scaleX(-1);
+}
+@media (max-width: 768px) {
+  .quienes-somos .quienes-somos__flip {
+    width: 130px;
+  }
 }
 
 .cursos {

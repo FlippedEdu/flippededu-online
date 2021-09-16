@@ -7,3 +7,6 @@ $('#nav__ul').onePageNav({
 	filter: '',
 	easing: 'swing',
 });
+
+// inicio de libreria AOS
+AOS.init();

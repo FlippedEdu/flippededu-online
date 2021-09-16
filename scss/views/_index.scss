@@ -86,6 +86,7 @@
 			z-index: 10;
 			@media (max-width: 576px) {
 				max-width: 300px;
+				margin: 0 5px;
 			}
 		}
 		.presentacion__luna {
@@ -141,7 +142,7 @@
 		justify-content: space-evenly;
 		flex-wrap: wrap;
 		.card {
-			padding: 20px;
+			// padding: 20px;
 			margin: 20px;
 			// background-color: rgba(12, 12, 12, 0.575);
 			border-radius: 3px;
@@ -156,6 +157,9 @@
 			.card__nombre {
 				margin: 25px 0 5px;
 			}
+			.card__info {
+				text-align: center;
+			}
 		}
 	}
 	.quienes-somos__flip {
@@ -163,7 +167,9 @@
 		width: 180px;
 		bottom: -80px;
 		left: 40px;
-		transform: scaleX(-1);
+		@media (max-width: 768px) {
+			width: 130px;
+		}
 	}
 }
 .cursos {

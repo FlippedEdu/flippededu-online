@@ -21,6 +21,7 @@
 			width: 20%;
 			.nav__enlace {
 				width: 100%;
+				font-size: 18px;
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -33,12 +34,14 @@
 			.nav__enlace:hover {
 				color: $color-blanco;
 				background-color: $color-azul-medio;
+				// background: $gradiente;
 			}
 		}
 		.active {
 			.nav__enlace {
 				color: $color-blanco;
 				background-color: $color-azul-medio;
+				// background: $gradiente;
 			}
 		}
 		@media (max-width: 768px) {

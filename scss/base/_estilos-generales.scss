@@ -7,9 +7,14 @@
 html {
 	scroll-behavior: smooth;
 }
+body {
+	background-color: $color-azul-muy-oscuro;
+	overflow-x: hidden;
+}
 h2 {
 	font-family: 'Harabara', sans-serif, -apple-system, 'Open Sans';
 	letter-spacing: 1.5px;
+	font-size: 26px;
 }
 .h2__span {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
