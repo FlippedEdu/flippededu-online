@@ -5,11 +5,35 @@
   font-style: normal;
   font-weight: normal; }
 
+@font-face {
+  font-family: 'Harabara';
+  src: url("../fonts/Harabara-700.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
 * {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif, -apple-system, 'Open Sans';
   box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background-color: #000244;
+  overflow-x: hidden; }
+
+h2 {
+  font-family: 'Harabara', sans-serif, -apple-system, 'Open Sans';
+  letter-spacing: 1.5px;
+  font-size: 26px; }
+
+.h2__span {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 500;
+  margin: 0 0.5px;
+  display: inline-block; }
 
 .footer {
   height: 10rem;
