@@ -20,12 +20,12 @@
 		<!-- Sección de contacto -->
 		<section class="sectionContacto" id="contacto">
 			<h2 class="contacto__h2">Contacto</h2>
-			<form class="sectionContacto__form">
+			<form action="correo.php" method="POST" class="sectionContacto__form">
 				<div class="sectionContacto__form--datos" >
-					<input class="completarEspacios" type="text" name="name_lastname" placeholder="Nombre y apellido">
-					<input class="completarEspacios" type="text" name="email" placeholder="Correo electrónico">
-					<input class="completarEspacios" type="text" name="phone" placeholder="Teléfono">
-					<textarea name="Consulta" id="textareaConsulta" placeholder="Tú consulta"></textarea>
+					<input class="completarEspacios" type="text" name="name_lastname" placeholder="Nombre y apellido" required>
+					<input class="completarEspacios" type="email" name="email" placeholder="Correo electrónico" required>
+					<input class="completarEspacios" type="text" name="phone" placeholder="Teléfono" required>
+					<textarea name="Consulta" id="textareaConsulta" placeholder="Tú consulta" required></textarea>
 					<div class="form__container--button">
 						<input data-aos="fade-up" data-aos-duration="1500" class="form__button" type="submit" value="Enviar">
 					</div>

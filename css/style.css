@@ -137,7 +137,8 @@ body {
   position: absolute;
   width: 125px;
   left: calc(100% - 50px);
-  bottom: calc(100% - 50px); }
+  bottom: calc(100% - 50px);
+  z-index: -1; }
 
 /*Estilos para la sección de Preguntas Frecuentes*/
 .preguntasFrecuentes {
