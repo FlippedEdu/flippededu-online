@@ -145,7 +145,8 @@ body {
   font-size: 18px; }
 
 .active, .colapsar:hover {
-  background-color: #797ff2; }
+  background-color: #797ff2;
+  color: #000244; }
 
 .content {
   padding: 0 18px;
