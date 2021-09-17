@@ -180,6 +180,11 @@ h2 {
   cursor: pointer;
   width: 60px;
   height: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 0 0vw rgba(14, 14, 14, 0.4);
 }
 .btn-menu .btn-menu__lineas {
   position: relative;
@@ -188,10 +193,10 @@ h2 {
   width: 40px;
   background-color: #000244;
   border-radius: 5px;
-  -webkit-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 .btn-menu .btn-menu__lineas .btn-menu__lineas--sup {
   position: absolute;
@@ -236,7 +241,7 @@ h2 {
 }
 .portada .portada__img {
   position: relative;
-  max-width: 500px;
+  max-width: 600px;
   padding: 20px;
   z-index: 10;
 }
@@ -252,7 +257,7 @@ h2 {
   text-align: center;
   margin-top: 20px;
   padding: 0 20px;
-  font-size: 30px;
+  font-size: 36px;
   z-index: 10;
   animation: aparecer 2s ease-in-out forwards;
 }

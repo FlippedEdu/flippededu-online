@@ -10,7 +10,7 @@
 	align-items: center;
 	.portada__img {
 		position: relative;
-		max-width: 500px;
+		max-width: 600px;
 		padding: 20px;
 		z-index: 10;
 		@media (max-width: 768px) {
@@ -24,7 +24,7 @@
 		text-align: center;
 		margin-top: 20px;
 		padding: 0 20px;
-		font-size: 30px;
+		font-size: 36px;
 		z-index: 10;
 		animation: aparecer 2s ease-in-out forwards;
 	}

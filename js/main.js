@@ -41,6 +41,12 @@ function menu() {
 			'-ms-transform': 'rotate(0deg)',
 			transform: 'rotate(0deg)',
 		});
+		$('#btn-menu').css({
+			'box-shadow': ' 0 0 0 0vw rgba(4, 28, 100, 0)',
+			'background-color': 'rgba(4, 28, 100, 0)',
+			// 'box-shadow': ' 0 0 0 0vw rgba(121, 127, 242, 0)',
+			// 'background-color': 'rgba(121, 127, 242, 0)',
+		});
 		verificador = false;
 	} else {
 		$('#btn-menu__lineas').css({
@@ -65,6 +71,12 @@ function menu() {
 			'-moz-transform': 'rotate(90deg)',
 			'-ms-transform': 'rotate(90deg)',
 			transform: 'rotate(90deg)',
+		});
+		$('#btn-menu').css({
+			'box-shadow': ' 0 0 0 200vw rgba(4, 28, 100, 0.90)',
+			'background-color': 'rgba(4, 28, 100, 0.90)',
+			// 'box-shadow': ' 0 0 0 200vw rgba(121, 127, 242, 0.90)',
+			// 'background-color': 'rgba(121, 127, 242, 0.90)',
 		});
 		verificador = true;
 	}

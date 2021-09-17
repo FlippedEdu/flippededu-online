@@ -7,6 +7,8 @@
 	cursor: pointer;
 	width: 60px;
 	height: 100%;
+	@include prefijos-transition(all 0.5s ease-in-out);
+	box-shadow: 0 0 0 0vw rgba(14, 14, 14, 0.4);
 	.btn-menu__lineas {
 		position: relative;
 		display: inline-block;
@@ -14,7 +16,7 @@
 		width: 40px;
 		background-color: $color-azul-muy-oscuro;
 		border-radius: 5px;
-		@include prefijos-transition(0.5s ease-in-out);
+		@include prefijos-transition(0.5s ease);
 		.btn-menu__lineas--sup {
 			position: absolute;
 			height: 4px;
