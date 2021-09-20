@@ -10,9 +10,6 @@ $('#nav__ul').onePageNav({
 	easing: 'swing',
 });
 
-// inicio de libreria AOS
-AOS.init();
-
 // funcionabilidad del botón hamburguesa del menu de navegación
 const btnMenu = $('#btn-menu');
 

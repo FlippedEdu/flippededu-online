@@ -13,7 +13,11 @@
 		max-width: 600px;
 		padding: 20px;
 		z-index: 10;
+		animation: aparecer 2s ease-in-out forwards;
 		@media (max-width: 768px) {
+			max-width: 300px;
+		}
+		@media (max-height: 450px) {
 			max-width: 300px;
 		}
 	}
@@ -27,6 +31,12 @@
 		font-size: 36px;
 		z-index: 10;
 		animation: aparecer 2s ease-in-out forwards;
+		@media (max-width: 768px) {
+			font-size: 28px;
+		}
+		@media (max-height: 450px) {
+			font-size: 28px;
+		}
 	}
 	.portada__conteiner {
 		width: 100%;
@@ -50,78 +60,125 @@
 .que-es {
 	background-color: $color-azul-muy-oscuro;
 	color: $color-blanco;
-	padding: 50px 60px 20px;
+	padding: 50px 0 0;
+	overflow: hidden;
+
 	.que-es__h2 {
 		margin: 10px 0;
+		padding: 0 60px;
 		@media (max-width: 768px) {
 			text-align: center;
+		}
+		@media (max-width: 576px) {
+			padding: 0 50px 0px;
 		}
 	}
 	.que-es__descripcion {
 		margin: 15px 0;
 		font-size: 18px;
+		text-align: justify;
+		padding: 0 60px;
+		@media (max-width: 768px) {
+			margin: 15px 0 0;
+		}
+		@media (max-width: 576px) {
+			padding: 0 50px 0px;
+		}
 	}
-}
-.presentacion {
-	position: relative;
-	width: 100%;
-	padding: 60px 40px;
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	background-color: $color-azul-muy-oscuro;
-	.presentacion__flip {
-		width: 200px;
-		position: absolute;
-		top: -55px;
-		right: 0;
+	.que-es__descripcion--seg {
+		margin: 0;
+		@media (max-width: 768px) {
+			display: none;
+		}
 	}
-	.presentacion__cont-video {
+	.presentacion {
 		position: relative;
-		.presentacion__video {
-			position: relative;
-			max-width: 500px;
-			border-radius: 30px 3px;
-			margin: 0 20px;
-			z-index: 5;
-			@media (max-width: 576px) {
-				max-width: 300px;
-				margin: 0 5px;
-			}
-		}
-		.presentacion__nave {
-			position: absolute;
-			width: 150px;
-			bottom: -50px;
-			left: -50px;
-			z-index: 10;
-		}
-	}
-	.presentacion__contenedor {
-		width: 270px;
-		height: 225px;
+		width: 100%;
+		padding: 85px 0px 60px;
 		display: flex;
-		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: center;
-		margin: 0 30px;
-		.presentacion__button {
-			font-size: 22px;
-			font-weight: 600;
-			color: $color-azul-oscuro;
-			background-color: $color-violeta;
-			box-shadow: 0 3px black;
-			padding: 10px 40px;
-			border-radius: 3px;
-			border: none;
-			cursor: pointer;
+		flex-wrap: wrap;
+		background-color: $color-azul-muy-oscuro;
+		@media (max-width: 992px) {
+			flex-direction: column;
 		}
-		.presentacion__dudas {
-			color: $color-blanco;
-			text-align: center;
+		@media (max-width: 768px) {
+			padding: 85px 0px 60px;
+		}
+		.presentacion__flip {
+			width: 200px;
+			position: absolute;
+			top: -40px;
+			right: 0;
+			@media (max-width: 768px) {
+				width: 140px;
+				top: -18px;
+			}
+		}
+		.presentacion__cont-video {
+			position: relative;
+			width: 500px;
+			@media (max-width: 576px) {
+				width: 300px;
+			}
+			.presentacion__video {
+				position: relative;
+				width: 500px;
+				border-radius: 30px 3px;
+				margin: 0 20px;
+				z-index: 5;
+				@media (max-width: 576px) {
+					width: 300px;
+					margin: 0;
+				}
+			}
+			.presentacion__nave {
+				position: absolute;
+				width: 150px;
+				bottom: -50px;
+				left: -50px;
+				z-index: 10;
+				@media (max-width: 768px) {
+					width: 110px;
+					bottom: -54px;
+					left: -29px;
+				}
+			}
+		}
+		.presentacion__contenedor {
+			width: 270px;
+			height: 110px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			margin: 0 30px;
+			@media (max-width: 992px) {
+				margin: 30px 0 0;
+			}
+			@media (max-width: 576px) {
+				width: 240px;
+			}
+			.presentacion__button {
+				font-size: 22px;
+				font-weight: 600;
+				color: $color-azul-oscuro;
+				background-color: $color-violeta;
+				box-shadow: 0 3px black;
+				padding: 10px 40px;
+				border-radius: 3px;
+				border: none;
+				cursor: pointer;
+			}
+			.presentacion__dudas {
+				color: $color-blanco;
+				text-align: center;
+			}
 		}
 	}
 }
+
 .quienes-somos {
 	position: relative;
 	width: 100%;
@@ -131,6 +188,9 @@
 	background-repeat: no-repeat;
 	color: $color-blanco;
 	padding: 40px 60px;
+	@media (max-width: 576px) {
+		padding: 40px 0px;
+	}
 	.quienes-somos__h2 {
 		margin: 20px 0;
 		@media (max-width: 768px) {
@@ -143,7 +203,7 @@
 		flex-wrap: wrap;
 		.card {
 			// padding: 20px;
-			margin: 20px;
+			margin: 20px 10px;
 			// background-color: rgba(12, 12, 12, 0.575);
 			border-radius: 3px;
 			display: flex;
@@ -168,7 +228,7 @@
 		bottom: -80px;
 		left: 50px;
 		@media (max-width: 768px) {
-			width: 130px;
+			width: 90px;
 		}
 	}
 }
@@ -176,6 +236,9 @@
 	width: 100%;
 	background-color: $color-azul-muy-oscuro;
 	padding: 70px 60px;
+	@media (max-width: 576px) {
+		padding: 70px 35px;
+	}
 	.cursos__h2 {
 		color: $color-blanco;
 		margin: 40px 0;
