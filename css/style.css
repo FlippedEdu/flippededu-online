@@ -49,17 +49,35 @@ h2 {
   .footer__img {
     width: 50px;
     height: 50px;
-    filter: invert(10%) sepia(39%) saturate(4507%) hue-rotate(219deg) brightness(104%) contrast(110%); }
+    filter: invert(10%) sepia(39%) saturate(4507%) hue-rotate(219deg) brightness(104%) contrast(110%);
+    transition: 0.3s transform; }
 
 .footer__img:hover {
-  transform: scale(1.05, 1.05); }
+  transform: scale(1.15, 1.15); }
 
 .container__redes {
-  width: 25%;
+  width: 35%;
   height: 100%;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center; }
+
+@media (max-width: 1200px) {
+  .container__redes {
+    width: 60%; } }
+
+@media (max-width: 800px) {
+  .footer__texto {
+    width: 100%;
+    text-align: center; }
+  .container__redes {
+    min-width: 100%; } }
+
+@media (max-width: 600px) {
+  .footer__texto {
+    min-width: 100%;
+    text-align: center; } }
 
 /*Estilo del body*/
 body {
