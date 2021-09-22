@@ -1,3 +1,13 @@
+#whatsapp {
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	display: none;
+	z-index: 50;
+}
+.logo-wsapp {
+	width: 50px;
+}
 .portada {
 	width: 100%;
 	height: calc(100vh - 50px);

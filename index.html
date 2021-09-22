@@ -43,6 +43,16 @@
 				<!-- <img src="imagenes/hamburguesa.png" alt="boton hamburguesa" class="btn-menu__hamburguesa" /> -->
 			</div>
 		</nav>
+		<div id="whatsapp">
+			<a href="https://api.whatsapp.com/send?phone=+340000000000&text=hola" target="_blank">
+				<img
+					src="imagenes/wsapp1.png"
+					title="Escríbenos por Whastapp"
+					alt="Escríbenos por Whastapp"
+					class="logo-wsapp"
+				/>
+			</a>
+		</div>
 		<section class="portada" id="portada">
 			<img src="imagenes/nombre.svg" alt="Flipped" class="portada__img" />
 			<h1 class="portada__h1">Dándole la vuelta a la manera de aprender.</h1>
@@ -87,6 +97,12 @@
 
 				<div class="presentacion__contenedor" data-aos="fade-up" data-aos-duration="2000">
 					<button class="presentacion__button">Inscribite acá</button>
+					<div class="cont-cupos" id="cont-cupos">
+						<p class="cont-cupos__p">
+							¡<span class="cont-cupos__vacantes" id="cont-cupos__vacantes"></span>
+							<span class="cont-cupos__item" id="cont-cupos__item"> cupos disponibles</span>!
+						</p>
+					</div>
 					<p class="presentacion__dudas">¿Tenes dudas? Escribinos al 23456789</p>
 				</div>
 			</section>
@@ -156,7 +172,6 @@
 				INSCRIPCIONES
 			</button>
 		</section>
-
 		<script src="js/jquery-v3.6.0.js"></script>
 		<script src="js/preloader.js"></script>
 		<script src="js/lightslider.js"></script>
@@ -164,6 +179,7 @@
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script src="js/aos-init.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/cont-cupos.js"></script>
 		<script src="js/slide.js"></script>
 	</body>
 </html>

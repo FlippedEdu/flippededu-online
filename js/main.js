@@ -1,5 +1,14 @@
 let verificador = false;
-
+// animación para logo de whatsapp
+$(document).ready(function () {
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {
+			$('#whatsapp').fadeIn();
+		} else {
+			$('#whatsapp').fadeOut();
+		}
+	});
+});
 // scroll active del nav
 $('#nav__ul').onePageNav({
 	currentClass: 'active',
