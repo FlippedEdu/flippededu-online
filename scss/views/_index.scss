@@ -136,10 +136,18 @@ body{
   font-size: 18px;
 }
 
+.flecha__abajo {
+  margin-right: 20px;
+  transform: rotate(270deg);
+  filter: invert(100%) sepia(0%) saturate(1582%) hue-rotate(100deg) brightness(117%) contrast(90%);
+}
+
 .active, .colapsar:hover {
   background-color: $color-violeta;
   color: $color-azul-muy-oscuro;
 }
+
+
 
 .content {
   padding: 0 18px;
@@ -156,6 +164,14 @@ body{
   right: 0vh;
   bottom: 0vh;
 }
+
+
+
+
+.preguntasFrecuentes__pregunta{
+  display: inline-block;
+}
+
 
 /*Responsive*/
 @media (max-width: 768px) { 
@@ -177,5 +193,12 @@ body{
   }
   .contenedor__textArea{
     display:none;
+  }
+
+  .presentacion__astronauta--preguntas{
+    position: absolute;
+    width: 220px;
+    right: 0vh;
+    bottom: -5vh;
   }
 }

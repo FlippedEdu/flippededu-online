@@ -40,13 +40,13 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .footer__texto{
     width: 100%;
     text-align: center;
   }
   .container__redes{
-    min-width: 100%;
+    min-width: 75%;
   }
 }
 
@@ -55,5 +55,8 @@
   .footer__texto{
     min-width: 100%;
     text-align: center;
+  }
+  .container__redes{
+    min-width: 100%;
   }
 }

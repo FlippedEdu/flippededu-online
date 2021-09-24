@@ -76,17 +76,19 @@ h2 {
   .container__redes {
     width: 60%; } }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .footer__texto {
     width: 100%;
     text-align: center; }
   .container__redes {
-    min-width: 100%; } }
+    min-width: 75%; } }
 
 @media (max-width: 600px) {
   .footer__texto {
     min-width: 100%;
-    text-align: center; } }
+    text-align: center; }
+  .container__redes {
+    min-width: 100%; } }
 
 /*Estilo del body*/
 body {
@@ -200,6 +202,11 @@ body {
   text-align: left;
   font-size: 18px; }
 
+.flecha__abajo {
+  margin-right: 20px;
+  transform: rotate(270deg);
+  filter: invert(100%) sepia(0%) saturate(1582%) hue-rotate(100deg) brightness(117%) contrast(90%); }
+
 .active, .colapsar:hover {
   background-color: #797ff2;
   color: #000244; }
@@ -218,6 +225,9 @@ body {
   right: 0vh;
   bottom: 0vh; }
 
+.preguntasFrecuentes__pregunta {
+  display: inline-block; }
+
 /*Responsive*/
 @media (max-width: 768px) {
   .sectionContacto {
@@ -232,4 +242,9 @@ body {
   #textareaConsulta {
     width: 100%; }
   .contenedor__textArea {
-    display: none; } }
+    display: none; }
+  .presentacion__astronauta--preguntas {
+    position: absolute;
+    width: 220px;
+    right: 0vh;
+    bottom: -5vh; } }
