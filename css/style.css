@@ -102,7 +102,8 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+  margin-bottom: 5rem; }
 
 .container__contador--texto {
   min-width: 30%;
@@ -151,18 +152,6 @@ body {
   flex-shrink: 2;
   resize: none; }
 
-.contenedor__textArea {
-  min-width: 45%;
-  height: 100%;
-  background: linear-gradient(120deg, #1fb4e6d5, #3d46f2d0, #041c64d3), url(/imagenes/galaxia.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  position: relative; }
-
 .form__container--button {
   min-width: 100%;
   display: flex;
@@ -177,12 +166,25 @@ body {
   border: none;
   border-radius: 5px; }
 
+.contenedor__ilustracion {
+  min-width: 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  position: relative; }
+
 .presentacion__luna--contacto {
   position: absolute;
   width: 125px;
   left: calc(100% - 50px);
   bottom: calc(100% - 50px);
   z-index: -1; }
+
+.presentacion__astronauta--contacto {
+  width: 100%; }
 
 /*Estilos para la sección de Preguntas Frecuentes*/
 .preguntasFrecuentes {
@@ -231,7 +233,8 @@ body {
 /*Responsive*/
 @media (max-width: 768px) {
   .sectionContacto {
-    padding: 2rem 30px; }
+    padding: 2rem 30px;
+    margin-bottom: 5rem; }
     .sectionContacto__form {
       margin-top: 1rem;
       height: 100%;

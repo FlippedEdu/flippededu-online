@@ -14,6 +14,7 @@
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<script defer src="/js/colapseButton.js"></script>
 		<script defer src="/js/countDownTimer.js"></script>
+		<script defer src="/js/AOS.js"></script>
 		<title>FLIPPED</title>
 	</head>
 	<body>
@@ -21,7 +22,7 @@
 		<br><br><br><br><br>
 
 		<section>
-			<div class="container__contador" data-aos="fade-up" data-aos-duration="2000">
+			<div class="container__contador" data-aos="zoom-in-up" data-aos-duration="2000">
 				<p class="container__contador--texto">¡Aprovecha esta oportunidad!</p>
 				<p id="countDownTimer"></p>
 			</div>
@@ -42,15 +43,14 @@
 						<input data-aos="fade-up" data-aos-duration="1500" class="form__button" type="submit" value="Enviar">
 					</div>
 				</div>
-				<div class="contenedor__textArea">
-					<img class="presentacion__luna--contacto" src="/imagenes/luna.svg" alt="imagen_luna">
-					<p>Imagen</p>
+				<div class="contenedor__ilustracion">
+					<!-- <img class="presentacion__luna--contacto" src="/imagenes/luna.svg" alt="imagen_luna"> -->
+					<img class="presentacion__astronauta--contacto" data-aos="fade-up" data-aos-duration="2000" src="/imagenes/Flipped-leyendo.svg" alt="img_astronauta">
 				</div>
 			</form>
 		</section>
 
 		<br><br><br><br><br>
-		<img src="" alt="">
 
 		<!-- Sección de FAQ -->
 		<section class="preguntasFrecuentes" id="preguntas">
@@ -96,8 +96,5 @@
 		</footer>
 
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  		<script>
-    		AOS.init();
-  		</script>
 	</body>
 </html>
