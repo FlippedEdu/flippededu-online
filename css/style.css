@@ -307,6 +307,75 @@ h2 {
     opacity: 1;
   }
 }
+@keyframes sobresalir1 {
+  0% {
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.048);
+    -o-transform: scale(1.048);
+    -moz-transform: scale(1.048);
+    -ms-transform: scale(1.048);
+    transform: scale(1.048);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes sobresalir2 {
+  0% {
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.048);
+    -o-transform: scale(1.048);
+    -moz-transform: scale(1.048);
+    -ms-transform: scale(1.048);
+    transform: scale(1.048);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes sobresalir3 {
+  0% {
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.048);
+    -o-transform: scale(1.048);
+    -moz-transform: scale(1.048);
+    -ms-transform: scale(1.048);
+    transform: scale(1.048);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
 .que-es {
   background-color: #000244;
   color: #f2f2f2;
@@ -448,6 +517,35 @@ h2 {
   border-radius: 3px;
   border: none;
   cursor: pointer;
+}
+.que-es .presentacion .presentacion__contenedor .cont-cupos {
+  backface-visibility: hidden;
+}
+.que-es .presentacion .presentacion__contenedor .cont-cupos .cont-cupos__p {
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+.que-es .presentacion .presentacion__contenedor .cont-cupos .anim-sobresalir1 {
+  -webkit-animation: sobresalir1 2s ease-in-out forwards;
+  -o-animation: sobresalir1 2s ease-in-out forwards;
+  -moz-animation: sobresalir1 2s ease-in-out forwards;
+  animation: sobresalir1 2s ease-in-out forwards;
+}
+.que-es .presentacion .presentacion__contenedor .cont-cupos .anim-sobresalir2 {
+  -webkit-animation: sobresalir2 2s ease-in-out forwards;
+  -o-animation: sobresalir2 2s ease-in-out forwards;
+  -moz-animation: sobresalir2 2s ease-in-out forwards;
+  animation: sobresalir2 2s ease-in-out forwards;
+}
+.que-es .presentacion .presentacion__contenedor .cont-cupos .anim-sobresalir3 {
+  -webkit-animation: sobresalir3 2s ease-in-out forwards;
+  -o-animation: sobresalir3 2s ease-in-out forwards;
+  -moz-animation: sobresalir3 2s ease-in-out forwards;
+  animation: sobresalir3 2s ease-in-out forwards;
 }
 .que-es .presentacion .presentacion__contenedor .presentacion__dudas {
   color: #f2f2f2;

@@ -67,6 +67,39 @@
 		opacity: 1;
 	}
 }
+@keyframes sobresalir1 {
+	0% {
+		@include prefijos-transform(scale(1));
+	}
+	50% {
+		@include prefijos-transform(scale(1.048));
+	}
+	100% {
+		@include prefijos-transform(scale(1));
+	}
+}
+@keyframes sobresalir2 {
+	0% {
+		@include prefijos-transform(scale(1));
+	}
+	50% {
+		@include prefijos-transform(scale(1.048));
+	}
+	100% {
+		@include prefijos-transform(scale(1));
+	}
+}
+@keyframes sobresalir3 {
+	0% {
+		@include prefijos-transform(scale(1));
+	}
+	50% {
+		@include prefijos-transform(scale(1.048));
+	}
+	100% {
+		@include prefijos-transform(scale(1));
+	}
+}
 .que-es {
 	background-color: $color-azul-muy-oscuro;
 	color: $color-blanco;
@@ -180,6 +213,23 @@
 				border-radius: 3px;
 				border: none;
 				cursor: pointer;
+			}
+			.cont-cupos {
+				backface-visibility: hidden;
+				.cont-cupos__p {
+					@include prefijos-transition(0.5s ease-in-out);
+					backface-visibility: hidden;
+					transform: translateZ(0);
+				}
+				.anim-sobresalir1 {
+					@include prefijos-animation(sobresalir1 2s ease-in-out forwards);
+				}
+				.anim-sobresalir2 {
+					@include prefijos-animation(sobresalir2 2s ease-in-out forwards);
+				}
+				.anim-sobresalir3 {
+					@include prefijos-animation(sobresalir3 2s ease-in-out forwards);
+				}
 			}
 			.presentacion__dudas {
 				color: $color-blanco;
