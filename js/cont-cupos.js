@@ -45,10 +45,11 @@ function resta3() {
 	let resta = vac - tercerResta;
 	console.log(`resta es: ${resta}`);
 	cupos.empty();
-	cupos.append(resta);
+	// cupos.append(resta);
 	if (resta == 1) {
 		$('#cont-cupos__item').empty();
-		$('#cont-cupos__item').append(' cupo disponible');
+		// $('#cont-cupos__item').append(' cupo disponible');
+		$('#cont-cupos__item').append('Últimos cupos disponibles');
 	}
 	$('.cont-cupos__p').toggleClass('anim-sobresalir3');
 	localStorage.setItem('cupos', JSON.stringify(resta));
@@ -79,5 +80,7 @@ if (primerResta + segundaResta + tercerResta >= cuposTotales) {
 console.log(`coposTotales: ${vacantes}`);
 if (vacantes === 1) {
 	$('#cont-cupos__item').empty();
-	$('#cont-cupos__item').append(' cupo disponible');
+	cupos.empty();
+	// $('#cont-cupos__item').append(' cupo disponible');
+	$('#cont-cupos__item').append('Últimos cupos disponibles');
 }

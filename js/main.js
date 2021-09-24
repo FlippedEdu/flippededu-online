@@ -53,6 +53,10 @@ function menu() {
 			// 'box-shadow': ' 0 0 0 0vw rgba(121, 127, 242, 0)',
 			// 'background-color': 'rgba(121, 127, 242, 0)',
 		});
+		$('#btn__ul').css({
+			display: 'none',
+			opacity: 0,
+		});
 		verificador = false;
 	} else {
 		$('#btn-menu__lineas').css({
@@ -83,6 +87,10 @@ function menu() {
 			'background-color': 'rgba(4, 28, 100, 0.90)',
 			// 'box-shadow': ' 0 0 0 200vw rgba(121, 127, 242, 0.90)',
 			// 'background-color': 'rgba(121, 127, 242, 0.90)',
+		});
+		$('#btn__ul').css({
+			display: 'flex',
+			opacity: 1,
 		});
 		verificador = true;
 	}

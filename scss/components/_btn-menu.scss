@@ -40,3 +40,29 @@
 		display: flex;
 	}
 }
+
+.btn__ul {
+	display: none;
+	position: fixed;
+	width: 320px;
+	top: calc(100vh / 2 - 192.5px + 30px);
+	left: calc(100vw / 2 - 150px);
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	padding: 40px 5px;
+	border-radius: 5px;
+	@include prefijos-transition(all 0.5s ease-in-out 1s);
+	// background-color: #000244d8;
+	.btn__li {
+		.btn__enlace {
+			display: inline-block;
+			font-size: 24px;
+			font-weight: 700;
+			color: $color-blanco;
+			text-decoration: none;
+			padding: 20px 40px;
+		}
+	}
+}

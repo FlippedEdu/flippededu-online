@@ -227,6 +227,32 @@ h2 {
   }
 }
 
+.btn__ul {
+  display: none;
+  position: fixed;
+  width: 320px;
+  top: calc(100vh / 2 - 192.5px + 30px);
+  left: calc(100vw / 2 - 150px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 40px 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s ease-in-out 1s;
+  -o-transition: all 0.5s ease-in-out 1s;
+  -moz-transition: all 0.5s ease-in-out 1s;
+  transition: all 0.5s ease-in-out 1s;
+}
+.btn__ul .btn__li .btn__enlace {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 20px 40px;
+}
+
 #whatsapp {
   position: fixed;
   right: 15px;
@@ -309,71 +335,35 @@ h2 {
 }
 @keyframes sobresalir1 {
   0% {
-    -webkit-transform: scale(1);
-    -o-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+    font-size: 1em;
   }
   50% {
-    -webkit-transform: scale(1.048);
-    -o-transform: scale(1.048);
-    -moz-transform: scale(1.048);
-    -ms-transform: scale(1.048);
-    transform: scale(1.048);
+    font-size: 1.09em;
   }
   100% {
-    -webkit-transform: scale(1);
-    -o-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+    font-size: 1em;
   }
 }
 @keyframes sobresalir2 {
   0% {
-    -webkit-transform: scale(1);
-    -o-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+    font-size: 1em;
   }
   50% {
-    -webkit-transform: scale(1.048);
-    -o-transform: scale(1.048);
-    -moz-transform: scale(1.048);
-    -ms-transform: scale(1.048);
-    transform: scale(1.048);
+    font-size: 1.09em;
   }
   100% {
-    -webkit-transform: scale(1);
-    -o-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+    font-size: 1em;
   }
 }
 @keyframes sobresalir3 {
   0% {
-    -webkit-transform: scale(1);
-    -o-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+    font-size: 1em;
   }
   50% {
-    -webkit-transform: scale(1.048);
-    -o-transform: scale(1.048);
-    -moz-transform: scale(1.048);
-    -ms-transform: scale(1.048);
-    transform: scale(1.048);
+    font-size: 1.09em;
   }
   100% {
-    -webkit-transform: scale(1);
-    -o-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+    font-size: 1em;
   }
 }
 .que-es {
@@ -518,34 +508,31 @@ h2 {
   border: none;
   cursor: pointer;
 }
-.que-es .presentacion .presentacion__contenedor .cont-cupos {
-  backface-visibility: hidden;
-}
 .que-es .presentacion .presentacion__contenedor .cont-cupos .cont-cupos__p {
-  -webkit-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  transition: all 0.5s linear;
   backface-visibility: hidden;
   transform: translateZ(0);
 }
 .que-es .presentacion .presentacion__contenedor .cont-cupos .anim-sobresalir1 {
-  -webkit-animation: sobresalir1 2s ease-in-out forwards;
-  -o-animation: sobresalir1 2s ease-in-out forwards;
-  -moz-animation: sobresalir1 2s ease-in-out forwards;
-  animation: sobresalir1 2s ease-in-out forwards;
+  -webkit-animation: sobresalir1 1.5s ease-in-out forwards;
+  -o-animation: sobresalir1 1.5s ease-in-out forwards;
+  -moz-animation: sobresalir1 1.5s ease-in-out forwards;
+  animation: sobresalir1 1.5s ease-in-out forwards;
 }
 .que-es .presentacion .presentacion__contenedor .cont-cupos .anim-sobresalir2 {
-  -webkit-animation: sobresalir2 2s ease-in-out forwards;
-  -o-animation: sobresalir2 2s ease-in-out forwards;
-  -moz-animation: sobresalir2 2s ease-in-out forwards;
-  animation: sobresalir2 2s ease-in-out forwards;
+  -webkit-animation: sobresalir2 1.5s ease-in-out forwards;
+  -o-animation: sobresalir2 1.5s ease-in-out forwards;
+  -moz-animation: sobresalir2 1.5s ease-in-out forwards;
+  animation: sobresalir2 1.5s ease-in-out forwards;
 }
 .que-es .presentacion .presentacion__contenedor .cont-cupos .anim-sobresalir3 {
-  -webkit-animation: sobresalir3 2s ease-in-out forwards;
-  -o-animation: sobresalir3 2s ease-in-out forwards;
-  -moz-animation: sobresalir3 2s ease-in-out forwards;
-  animation: sobresalir3 2s ease-in-out forwards;
+  -webkit-animation: sobresalir3 1.5s ease-in-out forwards;
+  -o-animation: sobresalir3 1.5s ease-in-out forwards;
+  -moz-animation: sobresalir3 1.5s ease-in-out forwards;
+  animation: sobresalir3 1.5s ease-in-out forwards;
 }
 .que-es .presentacion .presentacion__contenedor .presentacion__dudas {
   color: #f2f2f2;

@@ -69,35 +69,35 @@
 }
 @keyframes sobresalir1 {
 	0% {
-		@include prefijos-transform(scale(1));
+		font-size: 1em;
 	}
 	50% {
-		@include prefijos-transform(scale(1.048));
+		font-size: 1.09em;
 	}
 	100% {
-		@include prefijos-transform(scale(1));
+		font-size: 1em;
 	}
 }
 @keyframes sobresalir2 {
 	0% {
-		@include prefijos-transform(scale(1));
+		font-size: 1em;
 	}
 	50% {
-		@include prefijos-transform(scale(1.048));
+		font-size: 1.09em;
 	}
 	100% {
-		@include prefijos-transform(scale(1));
+		font-size: 1em;
 	}
 }
 @keyframes sobresalir3 {
 	0% {
-		@include prefijos-transform(scale(1));
+		font-size: 1em;
 	}
 	50% {
-		@include prefijos-transform(scale(1.048));
+		font-size: 1.09em;
 	}
 	100% {
-		@include prefijos-transform(scale(1));
+		font-size: 1em;
 	}
 }
 .que-es {
@@ -215,20 +215,19 @@
 				cursor: pointer;
 			}
 			.cont-cupos {
-				backface-visibility: hidden;
 				.cont-cupos__p {
-					@include prefijos-transition(0.5s ease-in-out);
+					@include prefijos-transition(all 0.5s linear);
 					backface-visibility: hidden;
 					transform: translateZ(0);
 				}
 				.anim-sobresalir1 {
-					@include prefijos-animation(sobresalir1 2s ease-in-out forwards);
+					@include prefijos-animation(sobresalir1 1.5s ease-in-out forwards);
 				}
 				.anim-sobresalir2 {
-					@include prefijos-animation(sobresalir2 2s ease-in-out forwards);
+					@include prefijos-animation(sobresalir2 1.5s ease-in-out forwards);
 				}
 				.anim-sobresalir3 {
-					@include prefijos-animation(sobresalir3 2s ease-in-out forwards);
+					@include prefijos-animation(sobresalir3 1.5s ease-in-out forwards);
 				}
 			}
 			.presentacion__dudas {
