@@ -1,0 +1,33 @@
+@mixin flex($justify) {
+	display: flex;
+	justify-content: $justify;
+	align-items: center;
+	flex-wrap: wrap;
+}
+@mixin prefijos-filter($kit) {
+	-webkit-filter: $kit;
+	filter: $kit;
+}
+@mixin prefijos-transform($kit) {
+	-webkit-transform: $kit;
+	-o-transform: $kit;
+	-moz-transform: $kit;
+	-ms-transform: $kit;
+	transform: $kit;
+}
+@mixin prefijos-backdrop-filter($kit) {
+	-webkit-backdrop-filter: $kit;
+	backdrop-filter: $kit;
+}
+@mixin prefijos-transition($kit) {
+	-webkit-transition: $kit;
+	-o-transition: $kit;
+	-moz-transition: $kit;
+	transition: $kit;
+}
+@mixin prefijos-animation($kit) {
+	-webkit-animation: $kit;
+	-o-animation: $kit;
+	-moz-animation: $kit;
+	animation: $kit;
+}

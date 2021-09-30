@@ -3,11 +3,12 @@ $color-blanco: #f2f2f2;
 $color-negro: #000000;
 $color-gris: #dbd5d5;
 $color-azul-muy-oscuro: #000244;
-$color-azul-oscuro: #041c64;
+$color-azul-oscuro: #041c64; 
 $color-azul-medio: #3d46f2;
 $color-celeste: #1fb4e6;
 $color-violeta: #797ff2;
 
 $gradiente: linear-gradient(120deg, #1fb4e6, #3d46f2, #041c64);
+$gradiente-transparente: linear-gradient(120deg, #1fb4e6d5, #3d46f2d0, #041c64d3);
 $transition: all 0.5s ease-in-out;
 $box-shadow: 0 0 10px 0 rgba(110, 110, 110, 0.4);

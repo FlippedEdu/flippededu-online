@@ -5,13 +5,187 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/lightslider.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
 			rel="stylesheet"
 		/>
-		<title>FLIPPED</title>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<title>FLIPPED EDU</title>
 	</head>
-	<body></body>
+	<body class="hidden">
+		<section class="preloader" id="preloader">
+			<div class="preloader__container">
+				<img src="imagenes/f-capital.svg" alt="Logo de flipped" class="preloader__logo" />
+				<div class="loadingio-spinner-eclipse-g89yp28h9bn preloader__spinner">
+					<div class="ldio-6z36en8lrh5">
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<nav class="nav">
+			<ul class="nav__ul" id="nav__ul">
+				<li class="d-none active"><a href="#portada"></a></li>
+				<li class="nav__li"><a class="nav__enlace" href="#que-es">¿Qué es?</a></li>
+				<li class="nav__li"><a class="nav__enlace" href="#quienes-somos">¿Quiénes somos?</a></li>
+				<li class="nav__li"><a class="nav__enlace" href="#cursos">Cursos</a></li>
+				<li class="nav__li"><a class="nav__enlace" href="#contacto">Contacto</a></li>
+				<li class="nav__li"><a class="nav__enlace" href="#preguntas">Preguntas frecuentes</a></li>
+			</ul>
+			<div class="btn-menu" id="btn-menu">
+				<span class="btn-menu__lineas" id="btn-menu__lineas">
+					<span class="btn-menu__lineas--sup" id="btn-menu__lineas--sup"></span>
+					<span class="btn-menu__lineas--inf" id="btn-menu__lineas--inf"></span>
+				</span>
+			</div>
+			<ul class="btn__ul" id="btn__ul">
+				<li class="btn__li"><a class="btn__enlace" href="#que-es">¿Qué es?</a></li>
+				<li class="btn__li"><a class="btn__enlace" href="#quienes-somos">¿Quiénes somos?</a></li>
+				<li class="btn__li"><a class="btn__enlace" href="#cursos">Cursos</a></li>
+				<li class="btn__li"><a class="btn__enlace" href="#contacto">Contacto</a></li>
+				<li class="btn__li"><a class="btn__enlace" href="#preguntas">Preguntas frecuentes</a></li>
+			</ul>
+		</nav>
+		<div id="whatsapp">
+			<a href="https://api.whatsapp.com/send?phone=+340000000000&text=hola" target="_blank">
+				<img
+					src="imagenes/wsapp1.png"
+					title="Escríbenos por Whastapp"
+					alt="Escríbenos por Whastapp"
+					class="logo-wsapp"
+				/>
+			</a>
+		</div>
+		<section class="portada" id="portada">
+			<img src="imagenes/nombre.svg" alt="Flipped" class="portada__img" />
+			<h1 class="portada__h1">Dándole la vuelta a la manera de aprender.</h1>
+			<div class="portada__conteiner"></div>
+		</section>
+		<section class="que-es" id="que-es">
+			<h2 class="que-es__h2">
+				<span class="h2__span">¿</span>Qué es Flipped<span class="h2__span">?</span>
+			</h2>
+			<p class="que-es__descripcion">
+				La idea de Flipped surge al momento de darnos cuenta de la brecha digital que existe en los
+				países en vías de desarrollo vs les más avanzados tecnológicamente, y viendo la oportunidad
+				de contar talento joven que se puede formar para trabajar en el sector de tecnologías
+				emergentes dándoles una oportunidad de movilidad social para que puedan vivir de mejor
+				manera.
+			</p>
+			<p class="que-es__descripcion que-es__descripcion--seg">
+				Es por ello que adaptándonos el contexto de los países con dificultades en la conectividad
+				la meta es brindar el formato de flipped classroom que es un aula hibrida, asíncrona con los
+				contenidos teóricos y síncrona en los espacios de mentoring, para darle la posibilidad a los
+				estudiantes de ver el contenido en los horarios que tengan posibilidad y luego estén
+				acompañados por un mentor que los acompañe en su proceso.
+			</p>
+			<section class="presentacion">
+				<img
+					data-aos="zoom-in-left"
+					data-aos-duration="2000"
+					src="imagenes/Flipped-01.svg"
+					alt="Astronauta flip flotando"
+					class="presentacion__flip"
+				/>
+				<div class="presentacion__cont-video">
+					<img
+						data-aos="zoom-in-right"
+						data-aos-duration="2000"
+						src="imagenes/nave-45.png"
+						alt="Dibujo de cohete espacial"
+						class="presentacion__nave"
+					/>
+					<video src="video/flipped.mp4" class="presentacion__video" controls></video>
+				</div>
+
+				<div class="presentacion__contenedor" data-aos="fade-up" data-aos-duration="2000">
+					<button class="presentacion__button">Inscribite acá</button>
+					<div class="cont-cupos" id="cont-cupos">
+						<p class="cont-cupos__p">
+							¡<span class="cont-cupos__vacantes" id="cont-cupos__vacantes"></span>
+							<span class="cont-cupos__item" id="cont-cupos__item"> cupos disponibles</span>!
+						</p>
+					</div>
+					<p class="presentacion__dudas">¿Tenes dudas? Escribinos al 23456789</p>
+				</div>
+			</section>
+		</section>
+
+		<section class="quienes-somos" id="quienes-somos">
+			<h2 class="quienes-somos__h2" data-aos="fade-up" data-aos-duration="2000">
+				<span class="h2__span">¿</span>Quiénes somos<span class="h2__span">?</span>
+			</h2>
+			<div class="quienes-somos__contenedor" data-aos="fade-up" data-aos-duration="2000">
+				<div class="card">
+					<img
+						src="imagenes/Recurso 11Nosotrxs.jpg"
+						alt="Foto de Andres Reinoza CEO & Founder de Flipped"
+						class="card__img"
+					/>
+					<h4 class="card__nombre">Andres Reinoza Arteaga</h4>
+					<p class="card__info">CEO & Founder</p>
+					<p class="card__info">Freelance en Marketing Digital</p>
+				</div>
+				<div class="card">
+					<img
+						src="imagenes/Recurso 10Nosotrxs.jpg"
+						alt="Foto de Valentina Reyes CMO & Co-Founder de Flipped"
+						class="card__img"
+					/>
+					<h4 class="card__nombre">Valentina Reyes Leon</h4>
+					<p class="card__info">CMO & Co-Founder</p>
+					<p class="card__info">Freelance en Diseño Grafico</p>
+				</div>
+			</div>
+			<img
+				data-aos="zoom-in"
+				data-aos-duration="2000"
+				src="imagenes/flip-2.png"
+				alt="Astronauta Flip flotando"
+				class="quienes-somos__flip"
+			/>
+		</section>
+		<section class="cursos" id="cursos">
+			<h2 class="cursos__h2">CURSOS</h2>
+			<div class="cursos__container" data-aos="fade-up" data-aos-duration="2000">
+				<ul id="autoWidth" class="cs-hidden cursos__lista">
+					<li class="cursos__item">
+						<h3 class="cursos__nombre">CURSO 1</h3>
+						<p class="cursos__detalle">Módulo 1 + Módulo 2</p>
+					</li>
+					<li class="cursos__item">
+						<h3 class="cursos__nombre">CURSO 2</h3>
+						<p class="cursos__detalle">Módulo 1 + Módulo 2</p>
+					</li>
+					<li class="cursos__item">
+						<h3 class="cursos__nombre">CURSO 3</h3>
+						<p class="cursos__detalle">Módulo 1 + Módulo 2</p>
+					</li>
+					<li class="cursos__item">
+						<h3 class="cursos__nombre">CURSO 4</h3>
+						<p class="cursos__detalle">Módulo 1 + Módulo 2</p>
+					</li>
+					<li class="cursos__item">
+						<h3 class="cursos__nombre">CURSO 5</h3>
+						<p class="cursos__detalle">Módulo 1 + Módulo 2</p>
+					</li>
+				</ul>
+			</div>
+			<button class="cursos__button" data-aos="fade-up" data-aos-duration="2000">
+				INSCRIPCIONES
+			</button>
+		</section>
+		<script src="js/jquery-v3.6.0.js"></script>
+		<script src="js/preloader.js"></script>
+		<script src="js/lightslider.js"></script>
+		<script src="js/nav-active.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script src="js/aos-init.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/cont-cupos.js"></script>
+		<script src="js/slide.js"></script>
+	</body>
 </html>
