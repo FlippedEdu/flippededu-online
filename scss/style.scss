@@ -1,8 +1,10 @@
 @import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'views/preloader';
 @import 'base/fonts';
 @import 'base/estilos-generales';
-@import 'layout/header';
-@import 'components/countDown';
-@import 'components/boton-menu';
+@import 'layout/nav';
+@import 'components/btn-menu';
 @import 'layout/footer';
+@import 'components/countDown';
 @import 'views/index';
