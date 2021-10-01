@@ -478,6 +478,11 @@ h2 {
     left: -29px;
   }
 }
+@media (max-width: 576px) {
+  .que-es .presentacion .presentacion__cont-video .presentacion__nave {
+    display: none;
+  }
+}
 .que-es .presentacion .presentacion__contenedor {
   width: 270px;
   height: 110px;

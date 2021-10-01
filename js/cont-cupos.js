@@ -5,9 +5,9 @@ const primerResta = 4; //valor que resta del cupo total luego del primer periodo
 const segundaResta = 2; //valor que resta del cupo restante luego del segundo periodo de tiempo
 const tercerResta = 3; //valor que resta del cupo restante luego del tercer periodo de tiempo
 
-const tiempo1 = 3000; //primer tiempo
-const tiempo2 = 6000; //segundo tiempo
-const tiempo3 = 9000; //tercer tiempo
+const tiempo1 = 5000; //primer tiempo
+const tiempo2 = 12000; //segundo tiempo
+const tiempo3 = 15000; //tercer tiempo
 
 let vacantes = JSON.parse(localStorage.getItem('cupos'));
 
