@@ -21,7 +21,7 @@ $('#nav__ul').onePageNav({
 
 // funcionabilidad del botón hamburguesa del menu de navegación
 const btnMenu = $('#btn-menu');
-
+const btnLi = $('.btn__li');
 function menu() {
 	if (verificador) {
 		$('#btn-menu__lineas').css({
@@ -95,4 +95,41 @@ function menu() {
 		verificador = true;
 	}
 }
+function contraerBtn() {
+	$('#btn-menu__lineas').css({
+		'-webkit-transform': 'rotate(0deg)',
+		'-o-transform': 'rotate(0deg)',
+		'-moz-transform': 'rotate(0deg)',
+		'-ms-transform': 'rotate(0deg)',
+		transform: 'rotate(0deg)',
+	});
+	$('#btn-menu__lineas--sup').css({
+		top: '10px',
+		'-webkit-transform': 'rotate(0deg)',
+		'-o-transform': 'rotate(0deg)',
+		'-moz-transform': 'rotate(0deg)',
+		'-ms-transform': 'rotate(0deg)',
+		transform: 'rotate(0deg)',
+	});
+	$('#btn-menu__lineas--inf').css({
+		top: '-10px',
+		'-webkit-transform': 'rotate(0deg)',
+		'-o-transform': 'rotate(0deg)',
+		'-moz-transform': 'rotate(0deg)',
+		'-ms-transform': 'rotate(0deg)',
+		transform: 'rotate(0deg)',
+	});
+	$('#btn-menu').css({
+		'box-shadow': ' 0 0 0 0vw rgba(4, 28, 100, 0)',
+		'background-color': 'rgba(4, 28, 100, 0)',
+		// 'box-shadow': ' 0 0 0 0vw rgba(121, 127, 242, 0)',
+		// 'background-color': 'rgba(121, 127, 242, 0)',
+	});
+	$('#btn__ul').css({
+		display: 'none',
+		opacity: 0,
+	});
+	verificador = false;
+}
 btnMenu.on('click', menu);
+btnLi.on('click', contraerBtn);
