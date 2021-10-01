@@ -77,7 +77,7 @@ if (primerResta + segundaResta + tercerResta >= cuposTotales) {
 } else {
 	contCupos();
 }
-console.log(`coposTotales: ${vacantes}`);
+console.log(`Cupos Totales: ${vacantes}`);
 if (vacantes === 1) {
 	$('#cont-cupos__item').empty();
 	cupos.empty();
