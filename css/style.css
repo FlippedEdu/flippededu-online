@@ -581,19 +581,14 @@ h2 {
   justify-content: space-evenly;
   align-items: center;
   flex-flow: row wrap;
-  background-image: url("/imagenes/cont-06.svg");
+  background-image: url("/imagenes/contador azul-06.svg");
   background-position: center;
   background-position-y: -50px;
   background-repeat: no-repeat;
   background-size: 500px; }
 
-.container__contador--texto {
-  color: #f2f2f2;
-  margin: 40px 0;
-  min-width: 30%;
-  text-align: center;
-  display: flex;
-  background-color: #000244; }
+#countDownTimer {
+  color: #f2f2f2; }
 
 /*Estilos para la sección CONTACTO*/
 .contacto__h2, .preguntasFrecuentes__h2 {
@@ -700,7 +695,7 @@ h2 {
   transform: rotate(270deg);
   filter: invert(100%) sepia(0%) saturate(1582%) hue-rotate(100deg) brightness(117%) contrast(90%); }
 
-.active, .colapsar:hover {
+.activo, .colapsar:hover {
   background-color: #797ff2;
   color: #000244; }
 
@@ -721,6 +716,9 @@ h2 {
 
 .preguntasFrecuentes__pregunta {
   display: inline-block; }
+
+#button__colapse--texto {
+  width: 450px; }
 
 /*Responsive*/
 @media (max-width: 1024px) {
