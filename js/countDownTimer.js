@@ -38,10 +38,10 @@ var x = setInterval(function() {
       days--;
       cont++;
     } while (days>0);
-    document.getElementById("countDownTimer").innerHTML = ( (hours+(24*cont)) + "h "+ minutes + "m " + seconds + "s ");
+    document.getElementById("countDownTimer").innerHTML = ( (hours+(24*cont)) + ":"+ minutes + ":" + seconds);
   }
   else
-    document.getElementById("countDownTimer").innerHTML = hours + "h "+ minutes + "m " + seconds + "s ";
+    document.getElementById("countDownTimer").innerHTML = hours + ":"+ minutes + ":" + seconds;
     
   // Si el contador llega a 0, mostrar el texto
   if (distance < 1) {

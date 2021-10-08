@@ -12,10 +12,10 @@
 		href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
 		rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script defer src="./js/colapseButton.js"></script>
 		<script defer src="./js/countDownTimer.js"></script>
-		<script defer src="./js/AOS.js"></script>
 		<title>FLIPPED</title>
 	</head>
 	<body class="hidden">
@@ -184,14 +184,13 @@
 
 
 		<section>
-			<div class="container__contador" data-aos="zoom-in-up" data-aos-duration="2000">
-				<!-- <p class="container__contador--texto">¡Aprovecha esta oportunidad!</p> -->
+			<div class="container__contador">
 				<div id="countDownTimer"></div>
 			</div>
 		</section>
 
 
-		<!-- Sección de contacto data-aos="zoom-in-right" data-aos-duration="2000" -->
+		<!-- Sección de contacto-->
 		<section class="sectionContacto" id="contacto">
 			<h2 class="contacto__h2">Contacto</h2>
 			<form action="correo.php" method="POST" class="sectionContacto__form">
@@ -200,12 +199,11 @@
 					<input class="completarEspacios" type="email" name="email" placeholder="Correo electrónico" required>
 					<input class="completarEspacios" type="text" name="phone" placeholder="Teléfono" required>
 					<textarea name="Consulta" id="textareaConsulta" placeholder="Tú consulta" required></textarea>
-						<!-- <img  src="imagenes/nave-45.png" alt="Dibujo de cohete espacial" class="presentacion__nave2"/> -->
 					<div class="form__container--button">
-						<input data-aos="fade-up" data-aos-duration="1500" class="form__button" type="submit" value="Enviar">
+						<input class="form__button" type="submit" value="Enviar">
 					</div>
 				</div>
-				<img class="presentacion__astronauta--contacto" data-aos="fade-up" data-aos-duration="2000" src="/imagenes/Flipped-leyendo.svg" alt="img_astronauta">
+				<img class="presentacion__astronauta--contacto" src="/imagenes/Flipped-leyendo.svg" alt="img_astronauta">
 			</form>
 		</section>
 
@@ -261,7 +259,7 @@
 				<p>Texto a completar</p>
 			</div>
 
-			<img  data-aos="zoom-in-up" data-aos-duration="1250" class="presentacion__astronauta--preguntas" src="./imagenes/Flipped-01.svg" alt="astronauta_img">
+			<img class="presentacion__astronauta--preguntas" src="./imagenes/Flipped-01.svg" alt="astronauta_img">
 		</section>
 
 		<!-- Footer -->
