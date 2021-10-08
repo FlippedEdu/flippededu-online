@@ -70,7 +70,7 @@ function menu() {
 			'-moz-transform': 'rotate(45deg)',
 			'-ms-transform': 'rotate(45deg)',
 			transform: 'rotate(45deg)',
-			'background-color': '#3d46f2',
+			'background-color': '#f2f2f2',
 		});
 		$('#btn-menu__lineas--sup').css({
 			top: 0,
@@ -79,7 +79,7 @@ function menu() {
 			'-moz-transform': 'rotate(90deg)',
 			'-ms-transform': 'rotate(90deg)',
 			transform: 'rotate(90deg)',
-			'background-color': '#3d46f2',
+			'background-color': '#f2f2f2',
 		});
 		$('#btn-menu__lineas--inf').css({
 			top: 0,
@@ -88,7 +88,7 @@ function menu() {
 			'-moz-transform': 'rotate(90deg)',
 			'-ms-transform': 'rotate(90deg)',
 			transform: 'rotate(90deg)',
-			'background-color': '#3d46f2',
+			'background-color': '#f2f2f2',
 		});
 		// $('#btn-menu').css({
 		// 	// 'box-shadow': ' 0 0 0 200vw rgba(4, 28, 100, 0.90)',
