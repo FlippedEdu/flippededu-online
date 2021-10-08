@@ -350,22 +350,21 @@
 /*Estilos para el contador*/
 .container__contador {
 	max-width: 100%;
-	height: 100px;
+	height: 500px;
 	font-size: 50px;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	flex-flow: row wrap;
-	margin-bottom: 10rem;
+	background-image: url('/imagenes/contador\ azul-06.svg');
+	background-position: center;
+	background-position-y: -50px;
+	background-repeat: no-repeat;
+	background-size: 500px;
 }
 
-.container__contador--texto {
+#countDownTimer {
 	color: $color-blanco;
-	margin: 40px 0;
-	min-width: 30%;
-	text-align: center;
-	display: flex;
-	background-color: $color-azul-muy-oscuro;
 }
 
 /*Estilos para la sección CONTACTO*/
@@ -507,15 +506,14 @@
 	background-color: $color-azul-muy-oscuro;
 }
 
-.presentacion__astronauta--preguntas {
-	position: absolute;
-	width: 200px;
-	right: 0vh;
-	bottom: 0vh;
-}
-
-.preguntasFrecuentes__pregunta {
-	display: inline-block;
+.content {
+	padding: 0 18px;
+	margin: 20px;
+	font-size: 18px;
+	display: none;
+	overflow: hidden;
+	background-color: $color-azul-muy-oscuro;
+	color: $color-blanco;
 }
 
 /*Responsive*/
@@ -583,55 +581,53 @@
 	}
 }
 
-@media (max-width: 768px) {
-	.contacto__h2 {
-		margin-bottom: 12rem;
-	}
+#button__colapse--texto {
+	width: 450px;
+}
 
-	.sectionContacto {
-		padding: 2rem 30px;
-		&__form {
-			margin-top: 1rem;
+.sectionContacto {
+	padding: 2rem 30px;
+	&__form {
+		margin-top: 1rem;
+		height: 100%;
+		width: 100%;
+		justify-items: center;
+		&--datos {
 			height: 100%;
 			width: 100%;
-			justify-items: center;
-			&--datos {
-				height: 100%;
-				width: 100%;
-			}
 		}
 	}
+}
 
-	.completarEspacios {
-		width: 75%;
-	}
+.completarEspacios {
+	width: 75%;
+}
 
-	.presentacion__astronauta--preguntas {
-		position: absolute;
-		width: 220px;
-		right: 0vh;
-		bottom: -5vh;
-	}
+.presentacion__astronauta--preguntas {
+	position: absolute;
+	width: 220px;
+	right: 0vh;
+	bottom: -5vh;
+}
 
-	.preguntasFrecuentes {
-		background: $color-azul-muy-oscuro;
-		max-width: 100%;
-		padding: 3rem 60px;
-		margin-top: 425px;
-		// position: relative;
-	}
+.preguntasFrecuentes {
+	background: $color-azul-muy-oscuro;
+	max-width: 100%;
+	padding: 3rem 60px;
+	margin-top: 425px;
+	// position: relative;
+}
 
-	.preguntasFrecuentes__h2 {
-		margin-bottom: 1rem;
-	}
-	.presentacion__astronauta--contacto {
-		width: 275px;
-	}
+.preguntasFrecuentes__h2 {
+	margin-bottom: 1rem;
+}
+.presentacion__astronauta--contacto {
+	width: 275px;
+}
 
-	.presentacion__astronauta--preguntas {
-		width: 140px;
-		bottom: -5vh;
-	}
+.presentacion__astronauta--preguntas {
+	width: 140px;
+	bottom: -5vh;
 }
 
 @media (max-width: 600px) {
