@@ -6,7 +6,7 @@
   $mensaje=$_POST['Consulta'];
 
   $header = "Enviado desde la pagina de FLIPPED";
-  $mensajeCompleto = "Nombre y apellido: " . $nombre "\n"
+  $mensajeCompleto = "Nombre y apellido: " .$nombre "\n"
                       "email: ".$email "\n";
                       "telefono: ".$telefono "\n"
                       "Asunto: ".$mensaje "\n";

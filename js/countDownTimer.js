@@ -2,18 +2,16 @@
 
 /*Verificar sesion - Si es primera vez que se carga la pagina, se guarda la fecha de ese instante como inicial */
 
-if (!localStorage.getItem("FechaIngreso")){
-    localStorage.setItem("FechaIngreso", Date.now()); 
+if (!localStorage.getItem('FechaIngreso')) {
+	localStorage.setItem('FechaIngreso', Date.now());
 }
 
-let numeroIni = localStorage.getItem("FechaIngreso"); //Guardar la fecha inicial de ingreso en una variable
-let inicio=parseInt(numeroIni);                       //Convertir el string de la variable a entero 
-var tiempoEnHoras = 3600000 * 48;                      //Cantidad de horas que se suman a la fecha inicial
-
-
+let numeroIni = localStorage.getItem('FechaIngreso'); //Guardar la fecha inicial de ingreso en una variable
+let inicio = parseInt(numeroIni); //Convertir el string de la variable a entero
+var tiempoEnHoras = 3600000 * 48; //Cantidad de horas que se suman a la fecha inicial
 
 // Setear la fecha objetivo (inicial + horas agregadas)
-var countDownDate = new Date(inicio+tiempoEnHoras).getTime();           
+var countDownDate = new Date(inicio + tiempoEnHoras).getTime();
 
 // Actualizar la cuenta en cada segundo
 var x = setInterval(function() {
@@ -50,4 +48,3 @@ var x = setInterval(function() {
     localStorage.clear();
   }
 }, 1000); //Cambiar cada 1000mlseg = 1seg
-
