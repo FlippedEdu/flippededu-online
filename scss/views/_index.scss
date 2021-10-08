@@ -295,9 +295,9 @@
 .cursos {
 	width: 100%;
 	background-color: $color-azul-muy-oscuro;
-	padding: 70px 60px;
+	padding: 70px 60px 30px;
 	@media (max-width: 576px) {
-		padding: 70px 35px;
+		padding: 70px 35px 30px;
 	}
 	.cursos__h2 {
 		color: $color-blanco;
@@ -333,17 +333,22 @@
 	}
 	.cursos__button {
 		position: relative;
-		left: calc((100% / 2) - 122.2px);
-		font-size: 22px;
+		left: calc((100% / 2) - 162.16px);
+		font-size: 26px;
 		font-weight: 600;
 		margin: 40px 0;
 		box-shadow: $box-shadow;
 		color: $color-blanco;
 		background-color: $color-azul-medio;
-		padding: 10px 40px;
+		padding: 18px 65px;
 		border-radius: 3px;
 		border: none;
 		cursor: pointer;
+		@media (max-width: 576px) {
+			font-size: 22px;
+			padding: 12px 50px;
+			left: calc((100% / 2) - 122.21px);
+		}
 	}
 }
 
@@ -439,7 +444,7 @@
 	width: 50%;
 	height: 50px;
 	font-size: 18px;
-	background-color: $color-azul-medio;
+	background-color: $color-violeta;
 	color: $color-blanco;
 	border: none;
 	border-radius: 5px;
@@ -504,16 +509,22 @@
 	display: none;
 	overflow: hidden;
 	background-color: $color-azul-muy-oscuro;
+	color: $color-blanco;
 }
 
-.content {
-	padding: 0 18px;
-	margin: 20px;
-	font-size: 18px;
-	display: none;
-	overflow: hidden;
-	background-color: $color-azul-muy-oscuro;
-	color: $color-blanco;
+.presentacion__astronauta--preguntas {
+	position: absolute;
+	width: 200px;
+	right: 0vh;
+	bottom: 0vh;
+}
+
+.preguntasFrecuentes__pregunta {
+	display: inline-block;
+}
+
+#button__colapse--texto {
+	width: 450px;
 }
 
 /*Responsive*/
@@ -581,53 +592,55 @@
 	}
 }
 
-#button__colapse--texto {
-	width: 450px;
-}
+@media (max-width: 768px) {
+	.contacto__h2 {
+		margin-bottom: 12rem;
+	}
 
-.sectionContacto {
-	padding: 2rem 30px;
-	&__form {
-		margin-top: 1rem;
-		height: 100%;
-		width: 100%;
-		justify-items: center;
-		&--datos {
+	.sectionContacto {
+		padding: 2rem 30px;
+		&__form {
+			margin-top: 1rem;
 			height: 100%;
 			width: 100%;
+			justify-items: center;
+			&--datos {
+				height: 100%;
+				width: 100%;
+			}
 		}
 	}
-}
 
-.completarEspacios {
-	width: 75%;
-}
+	.completarEspacios {
+		width: 75%;
+	}
 
-.presentacion__astronauta--preguntas {
-	position: absolute;
-	width: 220px;
-	right: 0vh;
-	bottom: -5vh;
-}
+	.presentacion__astronauta--preguntas {
+		position: absolute;
+		width: 220px;
+		right: 0vh;
+		bottom: -5vh;
+	}
 
-.preguntasFrecuentes {
-	background: $color-azul-muy-oscuro;
-	max-width: 100%;
-	padding: 3rem 60px;
-	margin-top: 425px;
-	// position: relative;
-}
+	.preguntasFrecuentes {
+		background: $color-azul-muy-oscuro;
+		max-width: 100%;
+		padding: 3rem 60px;
+		margin-top: 425px;
+		// position: relative;
+	}
 
-.preguntasFrecuentes__h2 {
-	margin-bottom: 1rem;
-}
-.presentacion__astronauta--contacto {
-	width: 275px;
-}
+	.preguntasFrecuentes__h2 {
+		margin-bottom: 1rem;
+	}
+	.presentacion__astronauta--contacto {
+		width: 275px;
+	}
 
-.presentacion__astronauta--preguntas {
-	width: 140px;
-	bottom: -5vh;
+	.presentacion__astronauta--preguntas {
+		width: 140px;
+		bottom: -5vh;
+	}
 }
 
 @media (max-width: 600px) {

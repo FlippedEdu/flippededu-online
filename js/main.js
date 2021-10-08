@@ -48,7 +48,7 @@ function menu() {
 			transform: 'rotate(0deg)',
 		});
 		$('#btn-menu').css({
-			'box-shadow': ' 0 0 0 0vw rgba(4, 28, 100, 0)',
+			// 'box-shadow': ' 0 0 0 0vw rgba(4, 28, 100, 0)',
 			'background-color': 'rgba(4, 28, 100, 0)',
 			// 'box-shadow': ' 0 0 0 0vw rgba(121, 127, 242, 0)',
 			// 'background-color': 'rgba(121, 127, 242, 0)',
@@ -83,7 +83,7 @@ function menu() {
 			transform: 'rotate(90deg)',
 		});
 		$('#btn-menu').css({
-			'box-shadow': ' 0 0 0 200vw rgba(4, 28, 100, 0.90)',
+			// 'box-shadow': ' 0 0 0 200vw rgba(4, 28, 100, 0.90)',
 			'background-color': 'rgba(4, 28, 100, 0.90)',
 			// 'box-shadow': ' 0 0 0 200vw rgba(121, 127, 242, 0.90)',
 			// 'background-color': 'rgba(121, 127, 242, 0.90)',
@@ -120,7 +120,7 @@ function contraerBtn() {
 		transform: 'rotate(0deg)',
 	});
 	$('#btn-menu').css({
-		'box-shadow': ' 0 0 0 0vw rgba(4, 28, 100, 0)',
+		// 'box-shadow': ' 0 0 0 0vw rgba(4, 28, 100, 0)',
 		'background-color': 'rgba(4, 28, 100, 0)',
 		// 'box-shadow': ' 0 0 0 0vw rgba(121, 127, 242, 0)',
 		// 'background-color': 'rgba(121, 127, 242, 0)',
