@@ -272,6 +272,10 @@ h2 {
   .container__redes {
     min-width: 100%; } }
 
+@media (max-width: 320px) {
+  .footer {
+    padding: 10px 20px; } }
+
 #countDownTimer {
   font-family: 'Digital';
   color: #f2f2f2;
@@ -824,3 +828,9 @@ h2 {
     background-size: 300px; }
   #countDownTimer {
     font-size: 60px; } }
+
+@media (max-width: 380px) {
+  .sectionContacto {
+    padding: 3rem 20px; }
+  .preguntasFrecuentes {
+    padding: 3rem 20px; } }
