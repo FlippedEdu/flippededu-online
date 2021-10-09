@@ -478,7 +478,7 @@
   color: $color-blanco;
   cursor: pointer;
   padding: 18px;
-  min-width: 50%;
+  min-width:100%;
   border: none;
   outline: none;
   text-align: left;
@@ -500,6 +500,8 @@
   padding: 0 18px;
   margin: 20px;
   font-size: 18px;
+  min-width: 100%;
+  text-align: justify;
   display: none;
   overflow: hidden;
   background-color: $color-azul-muy-oscuro;
@@ -510,7 +512,7 @@
 	position: absolute;
 	width: 200px;
 	right: 0vh;
-	bottom: 0vh;
+	bottom: -120px;
 }
 
 .preguntasFrecuentes__pregunta {
