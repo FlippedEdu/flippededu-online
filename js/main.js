@@ -97,6 +97,7 @@ function menu() {
 		// 	// 'background-color': 'rgba(121, 127, 242, 0.90)',
 		// });
 		$('#btn__ul').css({
+			display: 'flex',
 			'-webkit-animation': 'clipIn 0.4s linear forwards',
 			'-o-animation': 'clipIn 0.4s linear forwards',
 			'-moz-animation': 'clipIn 0.4s linear forwards',

@@ -45,7 +45,7 @@
 }
 
 .btn__ul {
-	display: flex;
+	display: none;
 	position: fixed;
 	width: 100%;
 	height: 100vh;
@@ -62,7 +62,7 @@
 	background-color: rgba(4, 28, 100, 0.9);
 	z-index: 110;
 	@include prefijos-transition(all 0.5s linear 1s);
-
+	clip-path: circle(0.3% at 100% 0);
 	.btn__li {
 		width: 300px;
 		text-align: center;
