@@ -83,6 +83,7 @@
 @keyframes clipIn {
 	0% {
 		clip-path: circle(0.3% at 100% 0);
+		display: flex;
 	}
 	100% {
 		// clip-path: circle(102.5% at 100% 0);
@@ -96,5 +97,6 @@
 	}
 	100% {
 		clip-path: circle(0.3% at 100% 0);
+		display: none;
 	}
 }

@@ -35,14 +35,12 @@
 			.nav__enlace:hover {
 				color: $color-blanco;
 				background-color: $color-azul-medio;
-				// background: $gradiente;
 			}
 		}
 		.active {
 			.nav__enlace {
 				color: $color-blanco;
 				background-color: $color-azul-medio;
-				// background: $gradiente;
 			}
 		}
 		@media (max-width: 768px) {
