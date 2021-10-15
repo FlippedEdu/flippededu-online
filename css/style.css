@@ -496,7 +496,7 @@ h2 {
 }
 @media (max-width: 768px) {
   .que-es .que-es__descripcion {
-    margin: 15px 0 0;
+    margin: 15px 0;
   }
 }
 @media (max-width: 576px) {
@@ -505,12 +505,7 @@ h2 {
   }
 }
 .que-es .que-es__descripcion--seg {
-  margin: 0;
-}
-@media (max-width: 768px) {
-  .que-es .que-es__descripcion--seg {
-    display: none;
-  }
+  margin-bottom: 10px;
 }
 .que-es .presentacion {
   position: relative;
