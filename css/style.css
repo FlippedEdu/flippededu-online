@@ -740,6 +740,15 @@ h2 {
 .cursos .cursos__container .cursos__lista .cursos__enlace .cursos__item1 {
   background-image: url(../imagenes/DiseñoGrafico.jpg);
 }
+.cursos .cursos__container .cursos__lista .cursos__enlace .cursos__item2 {
+  background-image: url(../imagenes/ecommerce.jpg);
+}
+.cursos .cursos__container .cursos__lista .cursos__enlace .cursos__item3 {
+  background-image: url(../imagenes/marketing-digital.jpg);
+}
+.cursos .cursos__container .cursos__lista .cursos__enlace .cursos__item4 {
+  background-image: url(../imagenes/desarrollo-web.jpg);
+}
 .cursos .cursos__button {
   position: relative;
   left: calc((100% / 2) - 162.16px);
