@@ -12,6 +12,6 @@
   $mensajeCompleto .= "Asunto: $mensaje";
 
   mail($destinatario, $mensajeCompleto, $header);
-  echo "<script>alert('Correo enviado exitosamente')</script>";
-  echo "<script>setTimeout(\"location.href='index.html'\",1000)</script>";
+  header('Location:index.html');
 ?>
+
