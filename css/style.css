@@ -687,19 +687,6 @@ h2 {
   border: none;
   border-radius: 5px; }
 
-.presentacion__nave2 {
-  position: absolute;
-  width: 200px;
-  bottom: 10px;
-  left: -220px;
-  z-index: -1;
-  transform: rotate(230deg); }
-  @media (max-width: 768px) {
-    .presentacion__nave2 {
-      width: 150px;
-      bottom: 50px;
-      left: 100px; } }
-
 /*Estilos para la sección de Preguntas Frecuentes*/
 .preguntasFrecuentes__h2 {
   margin-bottom: 1rem; }
@@ -715,7 +702,7 @@ h2 {
   color: #f2f2f2;
   cursor: pointer;
   padding: 18px;
-  min-width: 100%;
+  width: 75%;
   border: none;
   outline: none;
   text-align: left;
@@ -723,7 +710,8 @@ h2 {
 
 .flecha__abajo {
   transform: rotate(270deg);
-  filter: invert(100%) sepia(0%) saturate(1582%) hue-rotate(100deg) brightness(117%) contrast(90%); }
+  filter: invert(100%) sepia(0%) saturate(1582%) hue-rotate(100deg) brightness(117%) contrast(90%);
+  margin-left: 10px; }
 
 .activo,
 .colapsar:hover {
@@ -731,10 +719,10 @@ h2 {
   color: #000244; }
 
 .content {
-  padding: 0 18px;
-  margin: 20px;
+  padding: 0 32px;
+  margin: 20px 0;
   font-size: 18px;
-  min-width: 100%;
+  width: 75%;
   text-align: justify;
   display: none;
   overflow: hidden;
@@ -751,7 +739,7 @@ h2 {
   display: inline-block; }
 
 #button__colapse--texto {
-  width: 550px; }
+  width: 750px; }
 
 /*Responsive*/
 @media (max-width: 1024px) {
@@ -793,6 +781,8 @@ h2 {
   .presentacion__astronauta--contacto {
     width: 325px; }
   .colapsar {
+    min-width: 100%; }
+  .content {
     min-width: 100%; }
   #button__colapse--texto {
     width: 1000px; } }
