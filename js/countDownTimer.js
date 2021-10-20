@@ -18,7 +18,7 @@ var x = setInterval(function () {
 	// Obtener la fecha y tiempo actual
 	var now = new Date().getTime();
 
-	// Calcular la distancia de tiempo entre la fdecha inicial y la objetivo
+	// Calcular la distancia de tiempo entre la fecha inicial y la objetivo
 	var distance = countDownDate - now;
 
 	// Calculador de dias, horas, minutos y segundos
