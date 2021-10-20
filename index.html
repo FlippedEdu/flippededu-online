@@ -9,13 +9,12 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-		href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
-		rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-		<script defer src="./js/colapseButton.js"></script>
-		<script defer src="./js/countDownTimer.js"></script>
-		<script defer src="./js/AOS.js"></script>
+		<link rel="shortcut icon" href="./imagenes/favicon.png" />
+
 		<title>FLIPPED</title>
 	</head>
 	<body class="hidden">
@@ -53,7 +52,7 @@
 			</ul>
 		</nav>
 		<div id="whatsapp">
-			<a href="https://api.whatsapp.com/send?phone=+340000000000&text=hola" target="_blank">
+			<a href="https://api.whatsapp.com/send?phone=+584126473294&text=hola" target="_blank">
 				<img
 					src="imagenes/wsapp1.png"
 					title="Escríbenos por Whastapp"
@@ -105,14 +104,14 @@
 				</div>
 
 				<div class="presentacion__contenedor" data-aos="fade-up" data-aos-duration="2000">
-					<button class="presentacion__button">Inscribite acá</button>
+					<button class="presentacion__button" data-tf-popup="h78tQrh2">Inscribite acá</button>
 					<div class="cont-cupos" id="cont-cupos">
 						<p class="cont-cupos__p">
 							¡<span class="cont-cupos__vacantes" id="cont-cupos__vacantes"></span>
 							<span class="cont-cupos__item" id="cont-cupos__item"> cupos disponibles</span>!
 						</p>
 					</div>
-					<p class="presentacion__dudas">¿Tenes dudas? Escribinos al 23456789</p>
+					<p class="presentacion__dudas">¿Tenes dudas? Escríbenos</p>
 				</div>
 			</section>
 		</section>
@@ -155,59 +154,95 @@
 			<h2 class="cursos__h2">CURSOS</h2>
 			<div class="cursos__container" data-aos="fade-up" data-aos-duration="2000">
 				<ul id="autoWidth" class="cs-hidden cursos__lista">
-					<li class="cursos__item">
-						<h3 class="cursos__nombre">CURSO 1</h3>
-						<p class="cursos__detalle">Módulo 1 + Módulo 2</p>
-					</li>
-					<li class="cursos__item">
-						<h3 class="cursos__nombre">CURSO 2</h3>
-						<p class="cursos__detalle">Módulo 1 + Módulo 2</p>
-					</li>
-					<li class="cursos__item">
-						<h3 class="cursos__nombre">CURSO 3</h3>
-						<p class="cursos__detalle">Módulo 1 + Módulo 2</p>
-					</li>
-					<li class="cursos__item">
-						<h3 class="cursos__nombre">CURSO 4</h3>
-						<p class="cursos__detalle">Módulo 1 + Módulo 2</p>
-					</li>
-					<li class="cursos__item">
-						<h3 class="cursos__nombre">CURSO 5</h3>
-						<p class="cursos__detalle">Módulo 1 + Módulo 2</p>
-					</li>
+					<a
+						href="https://cov4rtdjo57.typeform.com/to/yzgMybvi"
+						target="_blank"
+						class="cursos__enlace"
+					>
+						<li class="cursos__item cursos__item1">
+							<!-- <h3 class="cursos__nombre">CURSO 1</h3>
+							<p class="cursos__detalle">Módulo 1 + Módulo 2</p> -->
+						</li>
+					</a>
+					<a
+						href="https://cov4rtdjo57.typeform.com/to/btRaNDdY"
+						target="_blank"
+						class="cursos__enlace"
+					>
+						<li class="cursos__item cursos__item2">
+							<!-- <h3 class="cursos__nombre">CURSO 2</h3>
+							<p class="cursos__detalle">Módulo 1 + Módulo 2</p> -->
+						</li>
+					</a>
+					<a
+						href="https://cov4rtdjo57.typeform.com/to/fAzq1wwt"
+						target="_blank"
+						class="cursos__enlace"
+					>
+						<li class="cursos__item cursos__item3">
+							<!-- <h3 class="cursos__nombre">CURSO 3</h3>
+							<p class="cursos__detalle">Módulo 1 + Módulo 2</p> -->
+						</li>
+					</a>
+					<a
+						href="https://cov4rtdjo57.typeform.com/to/Wx5T7eQ8"
+						target="_blank"
+						class="cursos__enlace"
+					>
+						<li class="cursos__item cursos__item4">
+							<!-- <h3 class="cursos__nombre">CURSO 4</h3>
+							<p class="cursos__detalle">Módulo 1 + Módulo 2</p> -->
+						</li>
+					</a>
 				</ul>
 			</div>
-			<button class="cursos__button" data-aos="fade-up" data-aos-duration="2000">
+			<button
+				class="cursos__button"
+				data-tf-popup="h78tQrh2"
+				data-aos="fade-up"
+				data-aos-duration="2000"
+			>
 				INSCRIPCIONES
 			</button>
 		</section>
 
-
 		<section>
-			<div class="container__contador" data-aos="zoom-in-up" data-aos-duration="2000">
-				<!-- <p class="container__contador--texto">¡Aprovecha esta oportunidad!</p> -->
+			<div class="container__contador" data-aos="fade-up"
+			data-aos-duration="2000">
 				<div id="countDownTimer"></div>
 			</div>
 		</section>
 
 
-		<!-- Sección de contacto data-aos="zoom-in-right" data-aos-duration="2000" -->
+		<!-- Sección de contacto-->
 		<section class="sectionContacto" id="contacto">
 			<h2 class="contacto__h2">Contacto</h2>
-			<form action="correo.php" method="POST" class="sectionContacto__form">
+
+			<div class="sectionContacto__formContainer">
+				<iframe allowTransparency="true" id="contactform123" name="contactform123" marginwidth="0" marginheight="0" frameborder="0" src="https://form.123formbuilder.com/my-contact-form-6013927.html"></iframe>
+				<div class="containerVacioAzul"></div>
+			</div>
+			<div class="sectionContacto__ilustracionContainer" data-aos="fade-up"
+			data-aos-duration="2000">
+			</div>
+		</section>
+
+
+
+
+			<!-- Formulario provisorio para utilizar con archivo PHP -->
+			<!-- <form action="correo.php" method="POST" class="sectionContacto__form">
 				<div class="sectionContacto__form--datos" >
 					<input class="completarEspacios" type="text" name="name_lastname" placeholder="Nombre y apellido" required>
 					<input class="completarEspacios" type="email" name="email" placeholder="Correo electrónico" required>
 					<input class="completarEspacios" type="text" name="phone" placeholder="Teléfono" required>
 					<textarea name="Consulta" id="textareaConsulta" placeholder="Tú consulta" required></textarea>
-						<!-- <img  src="imagenes/nave-45.png" alt="Dibujo de cohete espacial" class="presentacion__nave2"/> -->
 					<div class="form__container--button">
-						<input data-aos="fade-up" data-aos-duration="1500" class="form__button" type="submit" value="Enviar">
+						<input class="form__button" type="submit" value="Enviar">
 					</div>
 				</div>
-				<img class="presentacion__astronauta--contacto" data-aos="fade-up" data-aos-duration="2000" src="/imagenes/Flipped-leyendo.svg" alt="img_astronauta">
-			</form>
-		</section>
+			</form> -->
+
 
 
 		<!-- Sección de FAQ -->
@@ -216,52 +251,100 @@
 			<button type="button" class="colapsar">
 				<table>
 					<tr>
-						<td id="button__colapse--texto"><p class="preguntasFrecuentes__pregunta">¿Cómo puedo anotarme?</p></td>
-						<td><img class="flecha__abajo" src="./imagenes/flecha.svg" alt="flecha"></td>
+						<td id="button__colapse--texto">
+							<p class="preguntasFrecuentes__pregunta">¿Cómo puedo anotarme?</p>
+						</td>
+						<td><img class="flecha__abajo" src="./imagenes/flecha.svg" alt="flecha" /></td>
 					</tr>
 				</table>
 			</button>
 			<div class="content">
-			 <p>Texto a completar</p>
+				<p>Es muy sencillo, haces click en el curso de tu preferencia y te llegará un correo de  contacto con la información del curso y como puedes pagarlo.</p>
 			</div>
 
 			<button type="button" class="colapsar">
 				<table>
 					<tr>
-						<td id="button__colapse--texto"><p class="preguntasFrecuentes__pregunta">¿Cómo debo pagar?</p></td>
-						<td><img class="flecha__abajo" src="./imagenes/flecha.svg" alt="flecha"></td>
+						<td id="button__colapse--texto">
+							<p class="preguntasFrecuentes__pregunta">Me gustó un curso. ¿Cómo puedo pagar?</p>
+						</td>
+						<td><img class="flecha__abajo" src="./imagenes/flecha.svg" alt="flecha" /></td>
 					</tr>
 				</table>
 			</button>
 			<div class="content">
-				<p>Texto a completar</p> 
+				<p>Contamos con diversos medios de pago. Puedes abonar en divisas por:
+					Reserve
+					Paypal
+					Zelle
+					Además si quieres abonar al cambio del día puedes realizarlo por Transferencia Bancaría o Pago móvil a cotización del día del BCV </p>
 			</div>
 
 			<button type="button" class="colapsar">
 				<table>
 					<tr>
-						<td id="button__colapse--texto"><p class="preguntasFrecuentes__pregunta">¿Puedo realizar el curso en cualquier horario?</p></td>
-						<td><img class="flecha__abajo" src="./imagenes/flecha.svg" alt="flecha"></td>
+						<td id="button__colapse--texto">
+							<p class="preguntasFrecuentes__pregunta">
+								¿En que horarios son los cursos?
+							</p>
+						</td>
+						<td><img class="flecha__abajo" src="./imagenes/flecha.svg" alt="flecha" /></td>
 					</tr>
 				</table>
 			</button>
 			<div class="content">
-				<p>Texto a completar</p> 
+				<p>Al apoyarnos en la metodología Flipped la mayoría de contenido esta en línea para que puedas verlo a tu ritmo y en cualquier momento. Al momento de inscribirse podrás elegir los horarios de mañana o tarde-noche para los espacios de mentorías.</p>
 			</div>
 
 			<button type="button" class="colapsar">
 				<table>
 					<tr>
-						<td id="button__colapse--texto"><p class="preguntasFrecuentes__pregunta">¿Obtendré un certificado?</p></td>
-						<td><img class="flecha__abajo" src="./imagenes/flecha.svg" alt="flecha"></td>
+						<td id="button__colapse--texto">
+							<p class="preguntasFrecuentes__pregunta">¿Voy a tener un certificado al finalizar el curso?</p>
+						</td>
+						<td><img class="flecha__abajo" src="./imagenes/flecha.svg" alt="flecha" /></td>
 					</tr>
 				</table>
 			</button>
 			<div class="content">
-				<p>Texto a completar</p>
+				<p>¡Si! Vas a tener un certificado que valide tus conocimientos y las horas que cursaste. También vamos a repostear tu proyecto final en nuestras redes para que los reclutadores puedan conocerte.</p>
 			</div>
 
-			<img  data-aos="zoom-in-up" data-aos-duration="1250" class="presentacion__astronauta--preguntas" src="./imagenes/Flipped-01.svg" alt="astronauta_img">
+			<button type="button" class="colapsar">
+				<table>
+					<tr>
+						<td id="button__colapse--texto">
+							<p class="preguntasFrecuentes__pregunta">¿Qué cursos puedo hacer?</p>
+						</td>
+						<td><img class="flecha__abajo" src="./imagenes/flecha.svg" alt="flecha" /></td>
+					</tr>
+				</table>
+			</button>
+			<div class="content">
+				<p>Tenemos cursos de Marketing Digital en Redes Sociales. Diseño gráfico, E-commerce y pronto abriremos muchos más!</p>
+			</div>
+
+			<button type="button" class="colapsar">
+				<table>
+					<tr>
+						<td id="button__colapse--texto">
+							<p class="preguntasFrecuentes__pregunta">Quiero sumarme como parte del equipo de Flipped ¿qué hago?</p>
+						</td>
+						<td><img class="flecha__abajo" src="./imagenes/flecha.svg" alt="flecha" /></td>
+					</tr>
+				</table>
+			</button>
+			<div class="content">
+				<p>Puedes comentarnos acerca de ti, en el formulario de final de página con el Asunto "Quiero ser parte del equipo Flipped" y te contactaremos para conocer más de ti y tus habilidades</p>
+			</div>
+
+			<img
+				data-aos="zoom-in-up"
+				data-aos-duration="1250"
+				class="presentacion__astronauta--preguntas"
+				src="./imagenes/Flipped-01.svg"
+				alt="astronauta_img"
+			/>
 		</section>
 
 		<!-- Footer -->
@@ -270,13 +353,21 @@
 				<div class="footer__texto">
 					<p>Encuéntranos en:</p>
 				</div>
-					<a href="https://www.instagram.com/flipped_edu/?hl=es" target="_blank"><img class="footer__img" src="./imagenes/ico-inst3.svg" alt="logo_instagram"></a>
-					<a href="https://www.facebook.com/people/Flipped-Aula-invertida/100070203545906/?sk=reviews" target="_blank"><img class="footer__img" src="./imagenes/ico-faceb1.svg" alt="logo_facebook"></a>
-					<a href="https://www.linkedin.com/company/flipped-edu" target="_blank"><img class="footer__img" src="./imagenes/ico-linked1.svg" alt="logo_linkedin"></a>
+				<a href="https://www.instagram.com/flipped_edu/?hl=es" target="_blank"
+					><img class="footer__img" src="./imagenes/ico-inst3.svg" alt="logo_instagram"
+				/></a>
+				<a
+					href="https://www.facebook.com/people/Flipped-Aula-invertida/100070203545906/?sk=reviews"
+					target="_blank"
+					><img class="footer__img" src="./imagenes/ico-faceb1.svg" alt="logo_facebook"
+				/></a>
+				<a href="https://www.linkedin.com/company/flipped-edu" target="_blank"
+					><img class="footer__img" src="./imagenes/ico-linked1.svg" alt="logo_linkedin"
+				/></a>
 			</div>
 		</footer>
 
-		
+		<script src="//embed.typeform.com/next/embed.js"></script>
 		<script src="js/jquery-v3.6.0.js"></script>
 		<script src="js/preloader.js"></script>
 		<script src="js/lightslider.js"></script>
@@ -286,5 +377,8 @@
 		<script src="js/main.js"></script>
 		<script src="js/cont-cupos.js"></script>
 		<script src="js/slide.js"></script>
+		<script defer src="js/colapseButton.js"></script>
+		<script defer src="js/countDownTimer.js"></script>
+		<script defer src="/js/formEvent.js"></script>
 	</body>
 </html>

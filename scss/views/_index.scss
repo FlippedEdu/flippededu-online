@@ -22,6 +22,7 @@
 		position: relative;
 		max-width: 600px;
 		padding: 20px;
+
 		z-index: 10;
 		animation: aparecer 2s ease-in-out forwards;
 		@media (max-width: 768px) {
@@ -187,6 +188,9 @@
 					bottom: -54px;
 					left: -29px;
 				}
+				@media (max-width: 576px) {
+					display: none;
+				}
 			}
 		}
 		.presentacion__contenedor {
@@ -206,8 +210,8 @@
 			.presentacion__button {
 				font-size: 22px;
 				font-weight: 600;
-				color: $color-azul-oscuro;
-				background-color: $color-violeta;
+				color: $color-blanco;
+				background-color: $color-azul-medio;
 				box-shadow: 0 3px black;
 				padding: 10px 40px;
 				border-radius: 3px;
@@ -241,7 +245,6 @@
 .quienes-somos {
 	position: relative;
 	width: 100%;
-	// background: $gradiente-transparente, url(../imagenes/galaxia.jpg);
 	background: url(../imagenes/galaxia2.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -261,9 +264,7 @@
 		justify-content: space-evenly;
 		flex-wrap: wrap;
 		.card {
-			// padding: 20px;
 			margin: 20px 10px;
-			// background-color: rgba(12, 12, 12, 0.575);
 			border-radius: 3px;
 			display: flex;
 			flex-direction: column;
@@ -294,9 +295,9 @@
 .cursos {
 	width: 100%;
 	background-color: $color-azul-muy-oscuro;
-	padding: 70px 60px;
+	padding: 70px 60px 30px;
 	@media (max-width: 576px) {
-		padding: 70px 35px;
+		padding: 70px 35px 30px;
 	}
 	.cursos__h2 {
 		color: $color-blanco;
@@ -307,168 +308,188 @@
 	}
 	.cursos__container {
 		.cursos__lista {
-			.cursos__item {
-				width: 300px;
-				height: 200px;
-				border-radius: 30px 3px;
-				background-color: $color-violeta;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
+			cursor: grab;
+			.cursos__enlace {
+				text-decoration: none;
+				color: black;
+				cursor: pointer;
+				.cursos__item {
+					width: 300px;
+					height: 260px;
+					border-radius: 30px 3px;
+					background-image: url(../imagenes/Ecomerce.jpg);
+					background-size: cover;
+					background-repeat: no-repeat;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+				}
+				.cursos__item1 {
+					background-image: url(../imagenes/DiseñoGrafico.jpg);
+				}
 			}
 		}
 	}
 	.cursos__button {
 		position: relative;
-		left: calc((100% / 2) - 122.2px);
-		font-size: 22px;
+		left: calc((100% / 2) - 162.16px);
+		font-size: 26px;
 		font-weight: 600;
 		margin: 40px 0;
 		box-shadow: $box-shadow;
 		color: $color-blanco;
 		background-color: $color-azul-medio;
-		padding: 10px 40px;
+		padding: 18px 65px;
 		border-radius: 3px;
 		border: none;
 		cursor: pointer;
+		@media (max-width: 576px) {
+			font-size: 22px;
+			padding: 12px 50px;
+			left: calc((100% / 2) - 122.21px);
+		}
 	}
 }
-
-
-
 
 /*Estilos para el contador*/
 .container__contador{
   max-width: 100%;
   height: 500px;
-  font-size: 50px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-flow: row wrap;
-	background-image: url("/imagenes/contador\ azul-06.svg");
-	background-position: center;
-	background-position-y: -50px;
-	background-repeat: no-repeat;
-	background-size: 500px;
+  background-image: url("/imagenes/contador\ azul-06.svg");
+  background-position: center;
+  background-position-y: -25px;
+  background-repeat: no-repeat;
+  background-size: 450px;
 }
-
-#countDownTimer{
-	color: $color-blanco;
-}
-
 
 /*Estilos para la sección CONTACTO*/
-.contacto__h2{
-  width: 100%;
-  margin-bottom: 3rem;
-  color: $color-blanco;
-  margin: 40px 0;
+
+.sectionContacto__formContainer{
+	min-width:65%;
+	height: 100%;
+	position: relative;
 }
 
-.sectionContacto{
-  padding: 0 60px;
-  margin-bottom: 100px;
-  max-width: 100%;
-  height: 40rem;
-  display: flex;
-  flex-flow: row wrap;
-
-  &__form{
-    min-width: 100%;
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:space-evenly;
-    align-content: space-around;
-
-    &--datos{
-      width: 40%;
-      height: 100%;
-      flex-shrink: -1;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      align-content: space-around;
-    }
-  }
+#contactform123{
+	min-height:100%;
+	height:inherit;
+	width:100%;
 }
 
-.presentacion__astronauta--contacto{
-  width: 450px;
+.containerVacioAzul{
+	position: absolute;
+	background-color: $color-azul-muy-oscuro;
+	height: 200px;
+	min-width: 100%;
+	top: 675px;
 }
 
-.completarEspacios{
-  width: 100%;
-  height: 50px;
-  font-size: 22px;
-  border-radius: 5px;
-  border: 1px solid;
+.sectionContacto__ilustracionContainer{
+	min-width: 35%;
+	height: 75%;
+	background-image: url("../../imagenes/Flipped-leyendo.svg");
+  background-position: left;
+  background-position-y: 175px;
+  background-repeat: no-repeat;
+  background-size: 400px;
 }
 
-
-#textareaConsulta{
-  width:100%;
-  height: 40%;
-  font-size: 22px;
-  border-radius: 5px;
-  flex-shrink: -1;
-  resize: none;
-  position: relative;
+.presentacion__astronauta--contacto {
+	width: 100%;
 }
 
-.container__textArea{
-  position: relative;
+.contacto__h2 {
+	width: 100%;
+	margin-bottom: 1rem;
+	color: $color-blanco;
+	margin: 40px 0;
 }
 
+.sectionContacto {
+	padding: 0 60px;
+	max-width: 100%;
+	height: 1000px;
+	display: flex;
+	flex-flow: row wrap;
+	/*
+	&__form {
+		min-width: 100%;
+		height: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		align-content: space-around;
 
-.form__container--button{
-  min-width:100%;
-  display: flex;
-  justify-content: center;
+		&--datos {
+			width: 40%;
+			height: 100%;
+			flex-shrink: -1;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			align-content: space-around;
+		}
+	}
+	*/
 }
 
-.form__button{
-  width: 50%;
-  height: 50px;
-  font-size: 18px;
-  background-color: $color-violeta;
-  color:$color-blanco;
-  border: none;
-  border-radius: 5px
-  
+/*
+.completarEspacios {
+	width: 100%;
+	height: 50px;
+	font-size: 22px;
+	border-radius: 5px;
+	border: 1px solid;
 }
 
-.presentacion__nave2{
-  position: absolute;
-  width: 200px;
-  bottom: 10px;
-  left: -220px;
-  z-index: -1;
-  transform: rotate(230deg);
-  @media (max-width: 768px) {
-     width: 150px;
-     bottom: 50px;
-     left: 100px;
-  }
+#textareaConsulta {
+	width: 100%;
+	height: 40%;
+	font-size: 22px;
+	border-radius: 5px;
+	flex-shrink: -1;
+	resize: none;
+	position: relative;
 }
 
+.container__textArea {
+	position: relative;
+}
 
+.form__container--button {
+	min-width: 100%;
+	display: flex;
+	justify-content: center;
+}
 
+.form__button {
+	width: 50%;
+	height: 50px;
+	font-size: 18px;
+	background-color: $color-violeta;
+	color: $color-blanco;
+	border: none;
+	border-radius: 5px;
+}
+*/
 
 /*Estilos para la sección de Preguntas Frecuentes*/
 
-.preguntasFrecuentes__h2{
-  @extend .contacto__h2;
-  margin-bottom: 1rem;
+.preguntasFrecuentes__h2 {
+	@extend .contacto__h2;
+	margin-bottom: 1rem;
 }
 
-.preguntasFrecuentes{
-  background: $color-azul-muy-oscuro;
-  max-width: 100%;
-  padding: 3rem 60px;
-  position: relative;
+.preguntasFrecuentes {
+	background: $color-azul-muy-oscuro;
+	max-width: 100%;
+	padding: 3rem 60px;
+	position: relative;
 }
 
 .colapsar{
@@ -476,7 +497,7 @@
   color: $color-blanco;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width:75%;
   border: none;
   outline: none;
   text-align: left;
@@ -484,65 +505,92 @@
 }
 
 .flecha__abajo {
-  margin-right: 20px;
   transform: rotate(270deg);
   filter: invert(100%) sepia(0%) saturate(1582%) hue-rotate(100deg) brightness(117%) contrast(90%);
+  margin-left:10px;
 }
 
-.activo, .colapsar:hover {
-  background-color: $color-violeta;
-  color: $color-azul-muy-oscuro;
+.activo,
+.colapsar:hover {
+	background-color: $color-violeta;
+	color: $color-azul-muy-oscuro;
 }
-
 
 .content {
-	padding: 0 18px;
-  margin: 20px;
+  padding: 0 32px;
+  margin: 20px 0;
   font-size: 18px;
+  width: 75%;
+  text-align: justify;
   display: none;
   overflow: hidden;
   background-color: $color-azul-muy-oscuro;
-	color: $color-blanco;
+  color: $color-blanco;
 }
 
-.presentacion__astronauta--preguntas{
-  position: absolute;
-  width: 200px;
-  right: 0vh;
-  bottom: 0vh;
+.presentacion__astronauta--preguntas {
+	position: absolute;
+	width: 200px;
+	right: 0vh;
+	bottom: -120px;
 }
 
-.preguntasFrecuentes__pregunta{
-  display: inline-block;
+.preguntasFrecuentes__pregunta {
+	display: inline-block;
 }
 
 #button__colapse--texto{
-	width: 450px;
+	width: 750px;
 }
-
 
 /*Responsive*/
 
 @media (max-width: 1024px){
   .sectionContacto{
+		height: 1350px;
     &__form{
       justify-content: flex-end;
     }
   }
-
-  .presentacion__astronauta--contacto{
-    width: 375px;
-  }
+	.sectionContacto__formContainer{
+		min-width:100%;
+		height: 70%;
+	}
+	
+	#contactform123{
+		height:inherit;
+		width:100%;
+	}
+	
+	.containerVacioAzul{
+		position: absolute;
+		background-color: $color-azul-muy-oscuro;
+		height: 175px;
+		min-width: 100%;
+	}
+	
+	.sectionContacto__ilustracionContainer{
+		min-width: 100%;
+		height: 25%;
+		background-position: center;
+		background-position-y: 0px;
+		background-size: 350px;
+		z-index: 2;
+		margin-top: -250px;
+	}
+	.presentacion__astronauta--contacto{
+		width: 375px;
+	}
 }
 
 @media (max-width: 870px){
-  
+	
   .contacto__h2{
-    margin-bottom: 15rem;;
+    margin-bottom: 0.5rem;;
   }
 
   .sectionContacto{
-    padding: 2rem 30px;
+    padding: 1rem 30px;
     &__form{
       margin-top: 1rem;
       height: 100%;
@@ -565,17 +613,16 @@
 
   .presentacion__astronauta--preguntas{
     position: absolute;
-    width: 220px;
+    width: 200px;
     right: 0vh;
-    bottom: -5vh;
+    bottom: -10vh;
   }
 
   .preguntasFrecuentes{
     background: $color-azul-muy-oscuro;
     max-width: 100%;
-    padding: 3rem 60px;
-    margin-top: 475px;
-    // position: relative;
+    padding: 1rem 60px;
+    margin-top: 0px;
   }
 
   .preguntasFrecuentes__h2{
@@ -585,18 +632,28 @@
   .presentacion__astronauta--contacto{
     width: 325px;
   }
+
+  .colapsar{
+	min-width: 100%;
+  }
+
+  .content{
+	min-width: 100%;
+  }
+
+  #button__colapse--texto{
+	width: 1000px;
+}
 }
 
 @media (max-width: 768px) { 
 
   .contacto__h2{
-    margin-bottom: 12rem;;
+	text-align: center;
   }
 
   .sectionContacto{
-    padding: 2rem 30px;
     &__form{
-      margin-top: 1rem;
       height: 100%;
       width:100%;
       justify-items: center;
@@ -606,44 +663,157 @@
         }
       }  
     }
-  
-  .completarEspacios{
-   width: 75%;
+	.completarEspacios{
+		width: 75%;
   }
 
   .presentacion__astronauta--preguntas{
-    position: absolute;
-    width: 220px;
-    right: 0vh;
-    bottom: -5vh;
-  }
+	  position: absolute;
+	  width: 140px;
+	  right: 0vh;
+	  bottom: -80px;
+	}
 
+	
   .preguntasFrecuentes{
     background: $color-azul-muy-oscuro;
     max-width: 100%;
-    padding: 3rem 60px;
-    margin-top: 425px;
-    // position: relative;
-  }
+    padding: 1rem 60px;
+    margin-top: 50px;
+}
 
   .preguntasFrecuentes__h2{
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+	text-align: center;
   }
   .presentacion__astronauta--contacto{
     width: 275px;
   }
 
-  .presentacion__astronauta--preguntas{
-    width: 140px;
-    bottom: -5vh;
+  .container__contador{
+	max-width: 100%;
+	height: 400px;
+	background-position-y: -40px;
+	background-size: 400px;
   }
+
 }
 
 @media (max-width: 600px){
+
+	.sectionContacto{
+		height: 1250px;
+		padding: 0 10px;
+    &__form{
+      justify-content: flex-end;
+    }
+  }
+	.sectionContacto__formContainer{
+		min-width:100%;
+		height: 70%;
+	}
+	
+	#contactform123{
+		height:inherit;
+		width:100%;
+	}
+	
+	.containerVacioAzul{
+		position: absolute;
+		background-color: $color-azul-muy-oscuro;
+		height: 175px;
+		min-width: 100%;
+		top: 650px;
+	}
+	
+	.sectionContacto__ilustracionContainer{
+		min-width: 100%;
+		height: 25%;
+		background-position: center;
+		background-position-y: 0px;
+		background-repeat: no-repeat;
+		background-size: 275px;
+		z-index: 2;
+		margin-top: -150px;
+	}
+	.presentacion__astronauta--contacto{
+		width: 375px;
+	}
+
   .completarEspacios{
     width: 100%;
   }
   #textareaConsulta{
     min-width: 100%;
   }
+}
+
+@media (max-width: 576px){
+	.sectionContacto{
+		padding:0 20px;
+	}
+
+	.preguntasFrecuentes{
+		background: $color-azul-muy-oscuro;
+		max-width: 100%;
+		padding: 1rem 50px;
+		margin-top: 50px;
+	  }
+	
+}
+
+@media (max-width: 420px){
+
+	.sectionContacto{
+		padding:0 10px;
+	}
+
+	.sectionContacto__formContainer{
+		min-width:100%;
+		height: 80%;
+	}
+	
+	#contactform123{
+		height:inherit;
+		width:100%;
+	}
+	
+	.containerVacioAzul{
+		position: absolute;
+		background-color: $color-azul-muy-oscuro;
+		height: 175px;
+		min-width: 100%;
+		top: 650px;
+	}
+	
+	.sectionContacto__ilustracionContainer{
+		min-width: 100%;
+		height: 20%;
+		background-position: center;
+		background-position-y: 0px;
+		background-repeat: no-repeat;
+		background-size: 275px;
+		z-index: 2;
+		margin-top: -300px;
+	}
+	.container__contador{
+		max-width: 100%;
+		height: 350px;
+		background-position-y: -10px;
+		background-size: 300px;
+	  }
+
+	#countDownTimer{
+	    font-size: 60px;
+	}
+}
+
+@media (max-width: 380px){
+
+	.sectionContacto{
+		padding: 1rem 0px;
+	}
+	.preguntasFrecuentes{
+		padding: 1rem 20px;
+	  }
 }

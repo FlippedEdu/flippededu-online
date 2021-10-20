@@ -5,9 +5,9 @@ const primerResta = 4; //valor que resta del cupo total luego del primer periodo
 const segundaResta = 2; //valor que resta del cupo restante luego del segundo periodo de tiempo
 const tercerResta = 3; //valor que resta del cupo restante luego del tercer periodo de tiempo
 
-const tiempo1 = 3000; //primer tiempo
-const tiempo2 = 6000; //segundo tiempo
-const tiempo3 = 9000; //tercer tiempo
+const tiempo1 = 5; //primer tiempo en segundos
+const tiempo2 = 120; //segundo tiempo en segundos
+const tiempo3 = 150; //tercer tiempo en segundos
 
 let vacantes = JSON.parse(localStorage.getItem('cupos'));
 
@@ -57,19 +57,87 @@ function resta3() {
 }
 function contCupos() {
 	if (primerResta + segundaResta + tercerResta < vacantes) {
-		setTimeout(resta1, tiempo1);
-		setTimeout(resta2, tiempo2);
-		setTimeout(resta3, tiempo3);
+		timer1();
+		timer2();
+		timer3();
 	} else if (segundaResta + tercerResta < vacantes) {
-		setTimeout(resta2, tiempo2);
-		setTimeout(resta3, tiempo3);
+		timer2();
+		timer3();
 	} else if (tercerResta < vacantes) {
-		setTimeout(resta3, tiempo3);
+		timer3();
 	}
 }
 
 cupos.append(vacantes);
 
+console.log(`Cupos Totales: ${vacantes}`);
+
+function timer1() {
+	//Ponlo en segundos y luego en la función ya lo comparas en milisegundos
+	let countDownTime = tiempo1;
+	//La fecha inicial
+	let date = new Date();
+	date = date.getTime();
+	console.log(date);
+	let check = setInterval(function () {
+		//La fecha actual
+		let nowDate = new Date();
+		nowDate = nowDate.getTime();
+		//Calculas la diferencia
+		let difference = nowDate - date;
+		//Lo comparas
+		if (difference >= countDownTime * 1000) {
+			//Enviar el mensaje o hacer lo que quieras
+			resta1();
+			//Limpias el intervalo
+			clearInterval(check);
+		}
+	}, true);
+}
+function timer2() {
+	//Ponlo en segundos y luego en la función ya lo comparas en milisegundos
+	let countDownTime = tiempo2;
+	//La fecha inicial
+	let date = new Date();
+	date = date.getTime();
+	console.log(date);
+	let check = setInterval(function () {
+		//La fecha actual
+		let nowDate = new Date();
+		nowDate = nowDate.getTime();
+		//Calculas la diferencia
+		let difference = nowDate - date;
+		//Lo comparas
+		if (difference >= countDownTime * 1000) {
+			//Enviar el mensaje o hacer lo que quieras
+			resta2();
+			//Limpias el intervalo
+			clearInterval(check);
+		}
+	}, true);
+}
+function timer3() {
+	//Ponlo en segundos y luego en la función ya lo comparas en milisegundos
+	let countDownTime = tiempo3;
+	//La fecha inicial
+	let date = new Date();
+	date = date.getTime();
+	console.log(date);
+	let check = setInterval(function () {
+		//La fecha actual
+		let nowDate = new Date();
+		nowDate = nowDate.getTime();
+		//Calculas la diferencia
+		let difference = nowDate - date;
+		//Lo comparas
+		if (difference >= countDownTime * 1000) {
+			//Enviar el mensaje o hacer lo que quieras
+			resta3();
+			//Limpias el intervalo
+			clearInterval(check);
+		}
+	}, true);
+}
 if (primerResta + segundaResta + tercerResta >= cuposTotales) {
 	console.log(
 		'la suma de los valores a restar es igual o mayor al cupo total - reducir los valores a restar en la linea 4, 5 y 6'
@@ -77,7 +145,6 @@ if (primerResta + segundaResta + tercerResta >= cuposTotales) {
 } else {
 	contCupos();
 }
-console.log(`coposTotales: ${vacantes}`);
 if (vacantes === 1) {
 	$('#cont-cupos__item').empty();
 	cupos.empty();
