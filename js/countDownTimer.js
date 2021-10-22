@@ -8,7 +8,7 @@ if (!localStorage.getItem('FechaIngreso')) {
 
 let numeroIni = localStorage.getItem('FechaIngreso'); //Guardar la fecha inicial de ingreso en una variable
 let inicio = parseInt(numeroIni); //Convertir el string de la variable a entero
-var tiempoEnHoras = 3600000 * 48; //Cantidad de horas que se suman a la fecha inicial
+var tiempoEnHoras = 3600000 * 24; //Cantidad de horas que se suman a la fecha inicial
 
 // Setear la fecha objetivo (inicial + horas agregadas)
 var countDownDate = new Date(inicio + tiempoEnHoras).getTime();
@@ -36,13 +36,13 @@ var x = setInterval(function () {
 			cont++;
 		} while (days > 0);
 		document.getElementById('countDownTimer').innerHTML =
-			hours + 24 * cont + 'h ' + minutes + 'm ' + seconds + 's ';
-	} else document.getElementById('countDownTimer').innerHTML = hours + 'h ' + minutes + 'm ' + seconds + 's ';
+			hours + 24 * cont + ':' + minutes + ':' + seconds;
+	} else document.getElementById('countDownTimer').innerHTML = hours + ':' + minutes + ':' + seconds;
 
 	// Si el contador llega a 0, mostrar el texto
 	if (distance < 1) {
 		clearInterval(x);
-		document.getElementById('countDownTimer').innerHTML = 'INSCRIBETE';
+		document.getElementById('countDownTimer').innerHTML = '0:0:0';
 		localStorage.clear();
 	}
 }, 1000); //Cambiar cada 1000mlseg = 1seg

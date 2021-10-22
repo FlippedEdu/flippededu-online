@@ -1,3 +1,4 @@
+// logo de wasap en la parte inferior derecha
 #whatsapp {
 	position: fixed;
 	right: 15px;
@@ -8,6 +9,7 @@
 .logo-wsapp {
 	width: 50px;
 }
+// seccion de la portada
 .portada {
 	width: 100%;
 	height: calc(100vh - 50px);
@@ -101,6 +103,7 @@
 		font-size: 1em;
 	}
 }
+// sección de que es flipped y presentacion con video
 .que-es {
 	background-color: $color-azul-muy-oscuro;
 	color: $color-blanco;
@@ -131,9 +134,6 @@
 	}
 	.que-es__descripcion--seg {
 		margin-bottom: 10px;
-		// @media (max-width: 768px) {
-		// display: none;
-		// }
 	}
 	.presentacion {
 		position: relative;
@@ -218,6 +218,7 @@
 				border: none;
 				cursor: pointer;
 			}
+			// contador de cupos disponibles
 			.cont-cupos {
 				.cont-cupos__p {
 					@include prefijos-transition(all 0.5s linear);
@@ -241,7 +242,7 @@
 		}
 	}
 }
-
+// sección quienes somos con cards de los espacialistas
 .quienes-somos {
 	position: relative;
 	width: 100%;
@@ -292,6 +293,7 @@
 		}
 	}
 }
+// sección del slide de cursos disponibles
 .cursos {
 	width: 100%;
 	background-color: $color-azul-muy-oscuro;
@@ -325,6 +327,7 @@
 					justify-content: center;
 					align-items: center;
 				}
+				// imagenes de fondo para los cursos disponibles
 				.cursos__item1 {
 					background-image: url(../imagenes/DiseñoGrafico.jpg);
 				}
@@ -364,21 +367,16 @@
 /*Estilos para el contador*/
 .container__contador {
 	max-width: 100%;
-	height: 500px;
-	font-size: 50px;
+	height: 300px;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
 	background-image: url('../imagenes/contador-azul-06.svg');
 	background-position: center;
-	background-position-y: -50px;
+	background-position-y: -57px;
 	background-repeat: no-repeat;
-	background-size: 500px;
-}
-
-#countDownTimer {
-	color: $color-blanco;
+	background-size: 450px;
 }
 
 /*Estilos para la sección CONTACTO*/
@@ -457,20 +455,7 @@
 	color: $color-blanco;
 	border: none;
 	border-radius: 5px;
-}
-
-.presentacion__nave2 {
-	position: absolute;
-	width: 200px;
-	bottom: 10px;
-	left: -220px;
-	z-index: -1;
-	transform: rotate(230deg);
-	@media (max-width: 768px) {
-		width: 150px;
-		bottom: 50px;
-		left: 100px;
-	}
+	cursor: pointer;
 }
 
 /*Estilos para la sección de Preguntas Frecuentes*/
@@ -492,7 +477,7 @@
 	color: $color-blanco;
 	cursor: pointer;
 	padding: 18px;
-	width: 100%;
+	width: 75%;
 	border: none;
 	outline: none;
 	text-align: left;
@@ -500,9 +485,9 @@
 }
 
 .flecha__abajo {
-	margin-right: 20px;
 	transform: rotate(270deg);
 	filter: invert(100%) sepia(0%) saturate(1582%) hue-rotate(100deg) brightness(117%) contrast(90%);
+	margin-left: 10px;
 }
 
 .activo,
@@ -512,9 +497,11 @@
 }
 
 .content {
-	padding: 0 18px;
-	margin: 20px;
+	padding: 0 32px;
+	margin: 20px 0;
 	font-size: 18px;
+	width: 75%;
+	text-align: justify;
 	display: none;
 	overflow: hidden;
 	background-color: $color-azul-muy-oscuro;
@@ -525,7 +512,7 @@
 	position: absolute;
 	width: 200px;
 	right: 0vh;
-	bottom: 0vh;
+	bottom: -120px;
 }
 
 .preguntasFrecuentes__pregunta {
@@ -533,7 +520,7 @@
 }
 
 #button__colapse--texto {
-	width: 450px;
+	width: 750px;
 }
 
 /*Responsive*/
@@ -579,9 +566,9 @@
 
 	.presentacion__astronauta--preguntas {
 		position: absolute;
-		width: 220px;
+		width: 200px;
 		right: 0vh;
-		bottom: -5vh;
+		bottom: -10vh;
 	}
 
 	.preguntasFrecuentes {
@@ -589,7 +576,6 @@
 		max-width: 100%;
 		padding: 3rem 60px;
 		margin-top: 475px;
-		// position: relative;
 	}
 
 	.preguntasFrecuentes__h2 {
@@ -599,11 +585,24 @@
 	.presentacion__astronauta--contacto {
 		width: 325px;
 	}
+
+	.colapsar {
+		min-width: 100%;
+	}
+
+	.content {
+		min-width: 100%;
+	}
+
+	#button__colapse--texto {
+		width: 1000px;
+	}
 }
 
 @media (max-width: 768px) {
 	.contacto__h2 {
 		margin-bottom: 12rem;
+		text-align: center;
 	}
 
 	.sectionContacto {
@@ -619,16 +618,15 @@
 			}
 		}
 	}
-
 	.completarEspacios {
 		width: 75%;
 	}
 
 	.presentacion__astronauta--preguntas {
 		position: absolute;
-		width: 220px;
+		width: 140px;
 		right: 0vh;
-		bottom: -5vh;
+		bottom: -80px;
 	}
 
 	.preguntasFrecuentes {
@@ -636,19 +634,21 @@
 		max-width: 100%;
 		padding: 3rem 60px;
 		margin-top: 425px;
-		// position: relative;
 	}
 
 	.preguntasFrecuentes__h2 {
 		margin-bottom: 1rem;
+		text-align: center;
 	}
 	.presentacion__astronauta--contacto {
 		width: 275px;
 	}
 
-	.presentacion__astronauta--preguntas {
-		width: 140px;
-		bottom: -5vh;
+	.container__contador {
+		max-width: 100%;
+		height: 280px;
+		background-position-y: -40px;
+		background-size: 400px;
 	}
 }
 
@@ -658,5 +658,36 @@
 	}
 	#textareaConsulta {
 		min-width: 100%;
+	}
+}
+
+@media (max-width: 576px) {
+	.sectionContacto {
+		padding: 0 50px;
+	}
+
+	.preguntasFrecuentes {
+		background: $color-azul-muy-oscuro;
+		max-width: 100%;
+		padding: 3rem 50px;
+		margin-top: 475px;
+	}
+}
+
+@media (max-width: 420px) {
+	.container__contador {
+		max-width: 100%;
+		height: 220px;
+		background-position-y: -30px;
+		background-size: 300px;
+	}
+}
+
+@media (max-width: 380px) {
+	.sectionContacto {
+		padding: 3rem 20px;
+	}
+	.preguntasFrecuentes {
+		padding: 3rem 20px;
 	}
 }

@@ -51,8 +51,6 @@
 	height: 100vh;
 	top: 0;
 	left: 0;
-	// top: calc(100vh / 2 - 192.5px);
-	// left: calc(100% / 2 - 160px);
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -86,13 +84,11 @@
 		display: flex;
 	}
 	100% {
-		// clip-path: circle(102.5% at 100% 0);
 		clip-path: circle(141.4% at 100% 0);
 	}
 }
 @keyframes clipOut {
 	0% {
-		// clip-path: circle(102.5% at 100% 0);
 		clip-path: circle(141.4% at 100% 0);
 	}
 	100% {
